@@ -8,7 +8,7 @@
     "@cloudinary/url-gen": "^1.21.0",
     "@react-three/drei": "^9.99.0",
     "@react-three/fiber": "^8.13.3",
-    "@react-three/postprocessing": "^3.0.4",
+    
     "antd": "^5.24.4",
     "axios": "^1.10.0",
     "chart.js": "^4.4.9",
