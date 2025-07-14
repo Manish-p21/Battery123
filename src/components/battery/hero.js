@@ -1,7 +1,7 @@
 import React, { Suspense, useRef, useState, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useGLTF, Float, Environment } from '@react-three/drei';
-import * as THREE from 'three';
+import * as three from 'three';
 
 function BatteryModel({ mouse }) {
   const gltf = useGLTF('https://res.cloudinary.com/dn17q5qma/image/upload/v1752434681/battery_npjqjw.glb', true);
@@ -9,12 +9,12 @@ function BatteryModel({ mouse }) {
 
   useFrame(() => {
     if (modelRef.current) {
-      modelRef.current.rotation.y = THREE.MathUtils.lerp(
+      modelRef.current.rotation.y = three.MathUtils.lerp(
         modelRef.current.rotation.y,
         mouse.x * 0.5,
         0.1
       );
-      modelRef.current.rotation.x = THREE.MathUtils.lerp(
+      modelRef.current.rotation.x = three.MathUtils.lerp(
         modelRef.current.rotation.x,
         -mouse.y * 0.3,
         0.1
