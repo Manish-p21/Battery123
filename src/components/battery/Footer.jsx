@@ -39,7 +39,7 @@ const Footer = () => {
             <ul className="text-gray-600 text-sm space-y-2">
               <li>
                 <button
-                  onClick={() => navigate('/')}
+                  onClick={() => navigate('/home')}
                   className="hover:text-green-600 transition duration-300"
                 >
                   Home
