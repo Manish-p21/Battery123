@@ -14,7 +14,7 @@ function AppContent() {
     <div className="relative flex flex-col items-center bg-gray-900 text-white">
       <main className="w-full flex flex-col items-center">
         <Routes>
-          <Route path="/home" element={<Battery />} />
+          <Route path="/" element={<Battery />} />
           <Route path="/about" element={<About />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/Product" element={<Products1 />} />
