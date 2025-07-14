@@ -12,7 +12,6 @@
     "chart.js": "^4.4.9",
     "cloudinary": "^2.6.1",
     "cors": "^2.8.5",
-    "drei": "^2.2.21",
     "emoji-picker-react": "^4.12.2",
     "express": "^4.21.2",
     "framer-motion": "^12.4.11",
@@ -42,8 +41,6 @@
     "recharts": "^2.15.1",
     "slick-carousel": "^1.8.1",
     "tailwindcss": "^3.0.0",
-    "three": "^0.150.1",
-    "three-mesh-bvh": "^0.9.1",
     "three.meshline": "^1.4.0"
   },
   "scripts": {
