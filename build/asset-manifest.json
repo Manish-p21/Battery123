@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Battery1/static/css/main.ab1436b0.css",
+    "main.js": "/Battery1/static/js/main.d83f05d1.js",
+    "index.html": "/Battery1/index.html",
+    "main.ab1436b0.css.map": "/Battery1/static/css/main.ab1436b0.css.map",
+    "main.d83f05d1.js.map": "/Battery1/static/js/main.d83f05d1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab1436b0.css",
+    "static/js/main.d83f05d1.js"
+  ]
+}
