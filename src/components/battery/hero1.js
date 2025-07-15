@@ -217,5 +217,5 @@ const Hero1 = () => {
   );
 };
 
-Hero1 = {};
+Hero1.propTypes = {};
 export default Hero1;
