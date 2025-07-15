@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Battery from './pages/battery.js';
+import Header from './components/battery/header.js';
 import ProductDescriptionPage from './components/battery/ProductDescriptionPage.jsx';
 import About from './components/battery/about.js';
 import Cart from './components/battery/cart.js';
