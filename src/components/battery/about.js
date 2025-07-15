@@ -347,9 +347,9 @@ const About = () => {
         <footer className="py-12">
           <p className="text-center text-gray-600 text-sm">© 2025 Ampere Innovations. All rights reserved.</p>
           <div className="flex justify-center space-x-6 mt-4">
-            <a href="#" className="hover:text-gray-800">Privacy Policy</a>
-            <a href="#" className="hover:text-gray-800">Terms of Service</a>
-            <a href="#" className="hover:text-gray-800">Contact Us</a>
+            <a href="/s" className="hover:text-gray-800">Privacy Policy</a>
+            <a href="/s" className="hover:text-gray-800">Terms of Service</a>
+            <a href="/s" className="hover:text-gray-800">Contact Us</a>
           </div>
         </footer>
       </SectionContainer>

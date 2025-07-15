@@ -204,8 +204,8 @@ const Hero = () => {
       <nav className="flex justify-between items-center z-10 mb-6">
         <div className="text-gray-800 text-2xl font-bold">A</div>
         <div className="flex items-center space-x-4">
-          <a href="#shop" className="text-gray-600 text-sm hover:text-gray-800">Shop</a>
-          <a href="#features" className="text-gray-600 text-sm hover:text-gray-800">Features</a>
+          <a href="/shop" className="text-gray-600 text-sm hover:text-gray-800">Shop</a>
+          <a href="/features" className="text-gray-600 text-sm hover:text-gray-800">Features</a>
           <div className="text-gray-800">●</div>
         </div>
       </nav>
