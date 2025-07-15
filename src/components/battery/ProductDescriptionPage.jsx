@@ -35,7 +35,7 @@ const ProductDescriptionPage = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/product/${slug}`);
+        const res = await axios.get(`https://battery-api-6an6.onrender.com/api/product/${slug}`);
         if (res.data.success) {
           setProduct(res.data.data);
         } else {

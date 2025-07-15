@@ -97,9 +97,9 @@ const Products1 = () => {
     const fetchFilterOptions = async () => {
       try {
         const [brandsRes, categoriesRes, capacitiesRes] = await Promise.all([
-          axios.get('http://localhost:5000/api/brands'),
-          axios.get('http://localhost:5000/api/categories'),
-          axios.get('http://localhost:5000/api/capacities'),
+          axios.get('https://battery-api-6an6.onrender.com/api/brands'),
+          axios.get('https://battery-api-6an6.onrender.com/api/categories'),
+          axios.get('https://battery-api-6an6.onrender.com/api/capacities'),
         ]);
         if (brandsRes.data.success) setBrands(brandsRes.data.data);
         if (categoriesRes.data.success) setCategories(categoriesRes.data.data);
@@ -124,7 +124,7 @@ const Products1 = () => {
       if (filters.category && filters.category !== 'All Types') params.category = filters.category;
       if (filters.capacity && filters.capacity !== 'All Capacities') params.capacity = filters.capacity;
 
-      const res = await axios.get('http://localhost:5000/api/batteries', { params });
+      const res = await axios.get('https://battery-api-6an6.onrender.com/api/batteries', { params });
       if (res.data.success) {
         setFilteredProducts(res.data.data || []);
         setAppliedFilters(res.data.appliedFilters || {});

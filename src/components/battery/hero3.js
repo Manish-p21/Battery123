@@ -45,7 +45,7 @@ const Hero3 = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/batteries');
+        const res = await axios.get('https://battery-api-6an6.onrender.com/api/batteries');
         if (res.data.success) {
           setProducts(res.data.data || []);
         } else {
