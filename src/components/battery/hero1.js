@@ -89,15 +89,15 @@ const Hero1 = () => {
     <div>
       <section className="pt-16 pb-4 bg-white font-poppins">
         <div className="w-full mx-auto px-4 sm:px-6 lg:px-40">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-left">
             Shop by Categories
           </h2>
-          <div className="flex flex-wrap justify-center gap-5">
+          <div className="flex flex-wrap justify-left gap-5">
             {['batteries', 'chargers', 'inverters', 'ups', 'solar'].map((cat) => (
               <button
                 key={cat}
                 onClick={() => navigate(`/batteries?category=${cat}`)}
-                className="px-10 py-3 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition duration-300 shadow-md capitalize"
+                className="px-10 py-3 bg-white border border-green-200 text-gray-800 font-medium rounded-lg hover:bg-green-700 hover:text-white transition duration-300 shadow-md capitalize"
               >
                 {cat}
               </button>
@@ -111,14 +111,14 @@ const Hero1 = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">
             Featured Batteries & Chargers
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {products.length === 0 ? (
               <p className="text-gray-600 text-center col-span-full">Loading products...</p>
             ) : (
               products.slice(0, 30).map((product, index) => (
                 <div
                   key={product._id || index}
-                  className="relative bg-white p-6 border border-gray-200 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 animate-fadeIn"
+                  className="relative bg-white p-6 border border-green-200 rounded-2xl shadow-sm hover:shadow-2xl hover:scale-102 transition-all duration-300 animate-fadeIn"
                   style={{ animationDelay: `${index * 0.1}s` }}
                   role="article"
                 >
@@ -127,11 +127,11 @@ const Hero1 = () => {
                       Best Seller
                     </span>
                   )}
-                  <div className={`relative ${gridImageHeight} mb-4 overflow-hidden rounded-lg`}>
+                  <div className={`relative ${gridImageHeight} mb-4 overflow-hidden rounded-lg bg-white`}>
                     <img
                       src={getGoogleDriveImageUrl(product.image) || '/placeholder.jpg'}
                       alt={product.name || 'Product'}
-                      className={`${gridImageWidth} ${gridImageHeight} object-cover`}
+                      className={`${gridImageWidth} ${gridImageHeight} object-contain`}
                       loading="lazy"
                     />
                   </div>
