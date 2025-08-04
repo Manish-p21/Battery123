@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 
 const slides = [
-  { id: 1, title: "Power All Devices", description: "Explore batteries for every need.", buttonText: "Learn More", image: "https://res.cloudinary.com/dn17q5qma/image/upload/v1753959591/455_fpmsyg.jpg"},
+  { id: 1, title: "Power All Devices", description: "Explore batteries for every need.", buttonText: "Learn More", image: "/images/12.png"},
   { id: 2, title: "Long-Lasting Energy", description: "Reliable power for all applications.", buttonText: "Discover Now", image: "/images/12.png"},
-  { id: 3, title: "Eco-Friendly Solutions", description: "Sustainable batteries for a greener future.", buttonText: "Go Green", image: "https://res.cloudinary.com/dn17q5qma/image/upload/v1753959591/455_fpmsyg.jpg"},
+  { id: 3, title: "Eco-Friendly Solutions", description: "Sustainable batteries for a greener future.", buttonText: "Go Green", image: "/images/12.png"},
   { id: 4, title: "High Performance", description: "Unmatched power for heavy-duty use.", buttonText: "Get Started", image: "/images/12.png"},
-  { id: 5, title: "Compact Power", description: "Small batteries, big energy.", buttonText: "Explore Today", image: "https://res.cloudinary.com/dn17q5qma/image/upload/v1753959591/455_fpmsyg.jpg"},
-  { id: 6, title: "Rechargeable Innovation", description: "Cutting-edge rechargeable options.", buttonText: "See Details", image: "https://res.cloudinary.com/dn17q5qma/image/upload/v1753959591/455_fpmsyg.jpg"},
-  { id: 7, title: "Portable Energy", description: "Take power anywhere with ease.", buttonText: "Shop Now", image: "https://res.cloudinary.com/dn17q5qma/image/upload/v1753959591/455_fpmsyg.jpg"},
-  { id: 8, title: "Durable Design", description: "Built to last in any condition.", buttonText: "Learn More", image: "https://res.cloudinary.com/dn17q5qma/image/upload/v1753959591/455_fpmsyg.jpg"},
-  { id: 9, title: "Affordable Power", description: "Quality batteries at great prices.", buttonText: "Buy Now", image: "https://res.cloudinary.com/dn17q5qma/image/upload/v1753959591/455_fpmsyg.jpg"},
-  { id: 10, title: "Smart Battery Tech", description: "Intelligent power for modern needs.", buttonText: "Discover Now", image: "https://res.cloudinary.com/dn17q5qma/image/upload/v1753959591/455_fpmsyg.jpg"},
+  { id: 5, title: "Compact Power", description: "Small batteries, big energy.", buttonText: "Explore Today", image: "/images/12.png"},
+  { id: 6, title: "Rechargeable Innovation", description: "Cutting-edge rechargeable options.", buttonText: "See Details", image: "/images/12.png"},
+  { id: 7, title: "Portable Energy", description: "Take power anywhere with ease.", buttonText: "Shop Now", image: "/images/12.png"},
+  { id: 8, title: "Durable Design", description: "Built to last in any condition.", buttonText: "Learn More", image: "/images/12.png"},
+  { id: 9, title: "Affordable Power", description: "Quality batteries at great prices.", buttonText: "Buy Now", image: "/images/12.png"},
+  { id: 10, title: "Smart Battery Tech", description: "Intelligent power for modern needs.", buttonText: "Discover Now", image: "/images/12.png"},
 ];
 
 const Carousel = () => {
