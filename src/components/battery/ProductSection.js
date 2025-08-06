@@ -11,39 +11,39 @@ const ProductSection = () => {
           {/* Product 1 */}
           <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
             <img
-              src="https://res.cloudinary.com/dn17q5qma/image/upload/v1753959591/455_fpmsyg.jpg"
-              alt="Battery 1"
+              src="/images/1.jpg"
+              alt="PowerUp Pro Battery"
               className="w-full h-48 object-cover rounded-lg mb-4"
             />
             <h3 className="text-xl font-semibold text-gray-900">PowerUp Pro</h3>
             <p className="text-gray-600 mt-2">
-              High-performance battery for professional use, with extended lifespan and robust design.
+              Engineered for heavy-duty machinery and professional applications, delivering unmatched durability and extended lifespan.
             </p>
           </div>
 
           {/* Product 2 */}
           <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
             <img
-              src="https://res.cloudinary.com/dn17q5qma/image/upload/v1753959591/455_fpmsyg.jpg"
-              alt="Battery 2"
+              src="/images/2.jpg"
+              alt="PowerUp Eco Battery"
               className="w-full h-48 object-cover rounded-lg mb-4"
             />
             <h3 className="text-xl font-semibold text-gray-900">PowerUp Eco</h3>
             <p className="text-gray-600 mt-2">
-              Eco-friendly battery option with sustainable materials and efficient energy output.
+              Sustainable battery designed for home appliances, offering eco-friendly materials and efficient energy for everyday use.
             </p>
           </div>
 
           {/* Product 3 */}
           <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
             <img
-              src="https://res.cloudinary.com/dn17q5qma/image/upload/v1753959591/455_fpmsyg.jpg"
-              alt="Battery 3"
+              src="/images/3.jpg"
+              alt="PowerUp Ultra Battery"
               className="w-full h-48 object-cover rounded-lg mb-4"
             />
             <h3 className="text-xl font-semibold text-gray-900">PowerUp Ultra</h3>
             <p className="text-gray-600 mt-2">
-              Ultra-powerful battery for heavy-duty applications, designed for maximum efficiency.
+              High-performance battery for cars and motorbikes, optimized for maximum efficiency and reliable power delivery.
             </p>
           </div>
         </div>
