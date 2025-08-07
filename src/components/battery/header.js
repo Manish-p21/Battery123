@@ -20,6 +20,7 @@ const Header = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [suggestions, setSuggestions] = useState([]);
   const [loadingSuggestions, setLoadingSuggestions] = useState(false);
+  const [isSearchExpanded, setIsSearchExpanded] = useState(false);
 
   const handleMouseEnter = (dropdown) => {
     setShowDropdown(dropdown);
@@ -67,13 +68,33 @@ const Header = () => {
       window.location.href = `/search?query=${encodeURIComponent(searchQuery)}`;
       setSearchQuery('');
       setSuggestions([]);
+      setIsSearchExpanded(false);
     }
   };
 
   const handleSuggestionClick = (suggestion) => {
-    setSearchQuery(suggestion.name);
-    window.location.href = `/search?query=${encodeURIComponent(suggestion.name)}`;
+    if (suggestion.slug) {
+      window.location.href = `/product/${encodeURIComponent(suggestion.slug)}`;
+    } else {
+      console.error('Slug not found for suggestion:', suggestion);
+      window.location.href = `/search?query=${encodeURIComponent(suggestion.name)}`; // Fallback to search page
+    }
+    setSearchQuery('');
     setSuggestions([]);
+    setIsSearchExpanded(false);
+  };
+
+  const handleFocus = () => {
+    setIsSearchExpanded(true);
+  };
+
+  const handleBlur = () => {
+    // Delay collapse to allow click to process
+    setTimeout(() => {
+      if (!suggestions.length) {
+        setIsSearchExpanded(false);
+      }
+    }, 200); // Slight delay to ensure click registers
   };
 
   return (
@@ -110,7 +131,7 @@ const Header = () => {
                 {batteryData.map(battery => (
                   <Link 
                     key={battery.id} 
-                    to={`/search?category=${encodeURIComponent(battery.name)}`} 
+                    to={`/Product?category=${encodeURIComponent(battery.name)}`} 
                     className="block py-2 px-4 text-base text-gray-800 hover:text-green-600 hover:bg-green-50 transition-colors duration-200 rounded-md"
                   >
                     {battery.name}
@@ -132,7 +153,7 @@ const Header = () => {
                 {brandData.map(brand => (
                   <Link 
                     key={brand.id} 
-                    to={`/search?brand=${encodeURIComponent(brand.name)}`} 
+                    to={`/Product?brand=${encodeURIComponent(brand.name)}`} 
                     className="block py-2 px-4 text-base text-gray-800 hover:text-green-600 hover:bg-green-50 transition-colors duration-200 rounded-md"
                   >
                     {brand.name}
@@ -140,7 +161,7 @@ const Header = () => {
                 ))}
               </div>
             </div>
-            <Link to="/search?sortBy=priceAsc" className="text-gray-900 hover:text-green-600 transition-colors duration-300">Deals</Link>
+            <Link to="/Product?sortBy=priceAsc" className="text-gray-900 hover:text-green-600 transition-colors duration-300">Deals</Link>
             <Link to="/about" className="text-gray-900 hover:text-green-600 transition-colors duration-300">About</Link>
           </nav>
 
@@ -153,7 +174,9 @@ const Header = () => {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onKeyPress={handleSearch}
-                className="w-60 px-4 py-2 border border-green-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 focus:w-[700px] transition-all duration-300"
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+                className={`w-60 px-4 py-2 border border-green-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600 transition-all duration-300 ${isSearchExpanded ? 'w-[700px]' : 'w-60'}`}
               />
               <svg
                 className="w-5 h-5 text-gray-500 absolute right-3 top-1/2 transform -translate-y-1/2"
