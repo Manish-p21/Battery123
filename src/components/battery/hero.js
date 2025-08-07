@@ -67,7 +67,7 @@ const Carousel = () => {
       </div>
 
       {/* Shop Info Section (1/4 Width with Transparent Blur Background) */}
-      <div className="absolute right-0 w-1/4 h-full border-l border-green-200/50 bg-black/50 backdrop-blur-xl text-white p-10 flex flex-col justify-center z-30">
+      <div className="absolute right-0 w-1/4 h-full border-l border-green-100/50 bg-black/50 backdrop-blur-sm text-white p-10 flex flex-col justify-center z-30">
         <h2 className="text-3xl font-extrabold mb-8 mt-8 tracking-tight">Visit Our Shop</h2>
         <div className="mb-8 border-l-4 border-green-600 pl-4">
           <h3 className="text-xl font-semibold mb-2">Address</h3>

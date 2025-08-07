@@ -19,6 +19,12 @@ const ProductSection = () => {
             <p className="text-gray-600 mt-2">
               Engineered for heavy-duty machinery and professional applications, delivering unmatched durability and extended lifespan.
             </p>
+            <a
+              href="/Product?brand=Amaron"
+              className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-medium"
+            >
+              Learn More
+            </a>
           </div>
 
           {/* Product 2 */}
@@ -32,6 +38,12 @@ const ProductSection = () => {
             <p className="text-gray-600 mt-2">
               Sustainable battery designed for home appliances, offering eco-friendly materials and efficient energy for everyday use.
             </p>
+            <a
+              href="/Product?brand=Amaron"
+              className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-medium"
+            >
+              Learn More
+            </a>
           </div>
 
           {/* Product 3 */}
@@ -45,6 +57,12 @@ const ProductSection = () => {
             <p className="text-gray-600 mt-2">
               High-performance battery for cars and motorbikes, optimized for maximum efficiency and reliable power delivery.
             </p>
+            <a
+              href="/Product?brand=Amaron"
+              className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-medium"
+            >
+              Learn More
+            </a>
           </div>
         </div>
       </div>

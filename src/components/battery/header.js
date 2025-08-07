@@ -40,7 +40,7 @@ const Header = () => {
             <svg className="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 17V7h6v10H9zM12 4h3v3h-3V4zm0 13h3v3h-3v-3z" />
             </svg>
-            <Link to="/home" className="text-2xl font-extrabold text-gray-900 hover:text-green-600 transition-colors duration-300">
+            <Link to="/" className="text-2xl font-extrabold text-gray-900 hover:text-green-600 transition-colors duration-300">
               BatteryHub
             </Link>
           </div>

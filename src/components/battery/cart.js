@@ -230,7 +230,7 @@ const Cart = () => {
       <header className="fixed top-0 z-20 w-[1708px] bg-white shadow-md mt-2 mx-40 rounded-2xl border border-gray-200 py-4">
         <div className="w-full mx-auto px-4 sm:px-6 lg:px-20 flex justify-between items-center">
           <div className="flex items-center">
-            <Link to="/home" className="text-gray-800 text-2xl font-bold">A</Link>
+            <Link to="/" className="text-gray-800 text-2xl font-bold">A</Link>
             <span className="ml-4 text-gray-600">Cart ({Object.keys(cartState.items).length})</span>
           </div>
           <div className="text-gray-800 font-semibold">${total.toFixed(2)}</div>
@@ -241,7 +241,7 @@ const Cart = () => {
         {/* Breadcrumb */}
         <nav className="mb-6">
           <Link
-            to="/home"
+            to="/"
             className="text-gray-600 hover:text-gray-800 text-sm flex items-center"
             aria-label="Back to shop"
           >
