@@ -12,7 +12,7 @@ function AppContent() {
   
 
   return (
-    <div className="relative flex flex-col items-center bg-gray-900 text-white">
+    <div className="relative flex flex-col items-center bg-gray-900 text-white ">
       {<Header />}
       <main className="w-full flex flex-col items-center">
         <Routes>

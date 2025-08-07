@@ -193,9 +193,9 @@ const Hero1 = () => {
   }
 
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-50 pb-16">
       <section className="pt-20 pb-8 font-poppins">
-        <div className="w-full mx-auto px-4 sm:px-6 lg:px-40">
+        <div className="w-full mx-auto px-4 sm:px-6 lg:px-24">
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-8 text-left tracking-tight">
             Shop by Categories
           </h2>
@@ -231,7 +231,7 @@ const Hero1 = () => {
       </section>
 
       <section className="py-5 font-poppins">
-        <div className="w-full mx-auto px-4 sm:px-6 lg:px-40">
+        <div className="w-full mx-auto px-4 sm:px-6 lg:px-24">
           
           {loading ? (
             <p className="text-gray-600 text-lg text-center">Loading products...</p>
@@ -244,7 +244,7 @@ const Hero1 = () => {
               {products.slice(0, 30).map((product, index) => (
                 <div
                   key={product._id || index}
-                  className="relative bg-white p-6 border border-gray-200 rounded-xl shadow-md hover:shadow-xl hover:scale-100 transition-all duration-500 transform"
+                  className="relative bg-white px-2 border border-gray-200 rounded-xl shadow-md hover:shadow-xl hover:scale-100 transition-all duration-500 transform"
                   style={{ animation: `fadeIn 0.5s ease-in-out ${index * 0.1}s` }}
                   role="article"
                 >
@@ -257,21 +257,21 @@ const Hero1 = () => {
                     <img
                       src={getGoogleDriveImageUrl(product.image) || '/placeholder.jpg'}
                       alt={product.name || 'Product'}
-                      className={`${gridImageWidth} ${gridImageHeight} object-contain transition-transform duration-300 hover:scale-110`}
+                      className={`${gridImageWidth} ${gridImageHeight} object-contain transition-transform duration-300 hover:scale-105`}
                       loading="lazy"
                     />
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-0">{product.name || 'Unnamed Product'}</h3>
-                  <p className="text-gray-600 text-xs mb-4 line-clamp-2">{product.description || 'No description'}</p>
-                  <p className="text-lg font-bold text-gray-900 mb-0">
+                  <h3 className="text-lg px-2 font-semibold text-gray-900 mb-0">{product.name || 'Unnamed Product'}</h3>
+                  <p className="text-gray-600 px-2 text-xs mb-4 line-clamp-2">{product.description || 'No description'}</p>
+                  <p className="text-lg px-2 font-bold text-gray-900 mb-0">
                     ₹{product.price ? product.price.toFixed(2) : 'N/A'}
                   </p>
-                  <div className="flex items-center mb-4">
+                  <div className="flex px-2 items-center mb-4">
                     <StarRating rating={product.rating || 0} />
                     <span className="ml-2 text-xs text-gray-500">({product.rating || 0})</span>
                   </div>
                   
-                  <div className="flex gap-4">
+                  <div className="flex pb-4 px-2 gap-4">
                     <button
                       className="flex-1 bg-gradient-to-r from-green-600 to-green-700 text-white font-semibold py-2 rounded-lg hover:from-green-700 hover:to-green-800 transition duration-300 shadow-md"
                       onClick={() => setSelectedProduct(product)}

@@ -12,8 +12,8 @@ const Battery = () => {
     <div className="min-h-screen w-full bg-white pb-16">
       <Header />
       <Hero />
-      <ProductSection />
       <Hero1 />
+      <ProductSection />
       <Hero2 />
       
       {/* Main content area */}
