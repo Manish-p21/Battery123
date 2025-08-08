@@ -36,7 +36,7 @@ const Hero1 = () => {
 
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [products, setProducts] = useState([]);
-  const [categories, setCategories] = useState(['Batteries', 'Chargers', 'Inverters', 'UPS', 'Solar']);
+  const [categories, setCategories] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
@@ -45,12 +45,16 @@ const Hero1 = () => {
   // Get category from URL query parameter
   const query = new URLSearchParams(location.search);
   const selectedCategory = query.get('category') || '';
-  // Capitalize category to match API data
+  // Convert URL param to match API category (e.g., 'ups-batteries' to 'UPS Batteries')
   const formattedCategory = selectedCategory
-    ? selectedCategory.charAt(0).toUpperCase() + selectedCategory.slice(1)
+    ? selectedCategory
+        .split('-')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ')
+        .trim()
     : '';
 
-  // Mock products for fallback
+  // Mock products for fallback, including UPS Batteries and E-Rickshaw Batteries
   const mockProducts = [
     {
       _id: '1',
@@ -80,16 +84,16 @@ const Hero1 = () => {
     },
     {
       _id: '3',
-      name: 'Luminous UPS',
+      name: 'Luminous UPS Battery',
       price: 6000,
       rating: 4.2,
-      description: 'Efficient UPS for home and office use.',
-      image: '/luminous-ups.jpg',
+      description: 'Efficient UPS battery for home and office use.',
+      image: '/luminous-ups-battery.jpg',
       isBestSeller: false,
       brand: 'Luminous',
-      category: 'UPS',
+      category: 'UPS Batteries',
       capacity: '100Ah - 150Ah',
-      slug: 'luminous-ups',
+      slug: 'luminous-ups-battery',
     },
     {
       _id: '4',
@@ -113,9 +117,22 @@ const Hero1 = () => {
       image: '/tata-solar.jpg',
       isBestSeller: false,
       brand: 'Tata',
-      category: 'Solar',
+      category: 'Solar Batteries',
       capacity: 'N/A',
       slug: 'tata-solar',
+    },
+    {
+      _id: '6',
+      name: 'Livguard E-Rickshaw Battery',
+      price: 7000,
+      rating: 4.1,
+      description: 'Durable battery for e-rickshaw applications.',
+      image: '/livguard-e-rickshaw.jpg',
+      isBestSeller: false,
+      brand: 'Livguard',
+      category: 'E-Rickshaw Batteries',
+      capacity: '120Ah - 150Ah',
+      slug: 'livguard-e-rickshaw-battery',
     },
   ];
 
@@ -124,12 +141,16 @@ const Hero1 = () => {
     const fetchCategories = async () => {
       try {
         const res = await axios.get('https://battery-api-6an6.onrender.com/api/categories');
-        console.log('Fetched categories:', res.data);
-        if (res.data.success) {
-          setCategories(res.data.data || ['Batteries', 'Chargers', 'Inverters', 'UPS', 'Solar']);
+        console.log('Fetched categories:', res.data.data); // Debugging
+        if (res.data.success && res.data.data) {
+          setCategories(res.data.data);
+        } else {
+          console.warn('No categories returned, using fallback');
+          setCategories(['Batteries', 'Chargers', 'Inverters', 'UPS Batteries', 'Solar Batteries', 'E-Rickshaw Batteries']);
         }
       } catch (error) {
-        console.error('Error fetching categories:', error);
+        console.error('Error fetching categories:', error.message);
+        setCategories(['Batteries', 'Chargers', 'Inverters', 'UPS Batteries', 'Solar Batteries', 'E-Rickshaw Batteries']);
       }
     };
     fetchCategories();
@@ -140,20 +161,39 @@ const Hero1 = () => {
     const fetchProducts = async () => {
       setLoading(true);
       try {
+        // Use category query parameter only if a category is selected
         const params = formattedCategory ? { category: formattedCategory } : {};
-        console.log('Fetching products with params:', params);
+        console.log('Fetching products with params:', params); // Debugging
         const res = await axios.get('https://battery-api-6an6.onrender.com/api/batteries', { params });
-        console.log('API response:', res.data);
-        if (res.data.success) {
-          const fetchedProducts = res.data.data || [];
-          setProducts(fetchedProducts.length > 0 ? fetchedProducts : mockProducts);
+        console.log('API product response:', res.data); // Debugging
+        if (res.data.success && res.data.data) {
+          const fetchedProducts = res.data.data;
+          // Filter products by category on the client side as a fallback
+          const filteredProducts = formattedCategory
+            ? fetchedProducts.filter(product => {
+                const productCategory = product.category?.trim();
+                console.log(`Comparing product category "${productCategory}" with selected "${formattedCategory}"`); // Debugging
+                return productCategory === formattedCategory;
+              })
+            : fetchedProducts;
+          console.log('Filtered products:', filteredProducts); // Debugging
+          setProducts(filteredProducts.length > 0 ? filteredProducts : mockProducts.filter(product => {
+            const productCategory = product.category?.trim();
+            console.log(`Fallback: Comparing mock product category "${productCategory}" with selected "${formattedCategory}"`); // Debugging
+            return !formattedCategory || productCategory === formattedCategory;
+          }));
         } else {
           throw new Error(res.data.message || 'Failed to fetch products');
         }
       } catch (error) {
-        console.error('Error fetching products:', error);
+        console.error('Error fetching products:', error.message);
         setError(error.message);
-        setProducts(formattedCategory ? mockProducts.filter(product => product.category === formattedCategory) : mockProducts);
+        // Use mock products filtered by category as a fallback
+        setProducts(formattedCategory ? mockProducts.filter(product => {
+          const productCategory = product.category?.trim();
+          console.log(`Fallback: Comparing mock product category "${productCategory}" with selected "${formattedCategory}"`); // Debugging
+          return productCategory === formattedCategory;
+        }) : mockProducts);
       } finally {
         setLoading(false);
       }
@@ -212,13 +252,13 @@ const Hero1 = () => {
               All Types
             </button>
             {categories
-              .filter((cat) => cat !== 'All Types') // Prevent duplicate "All Types"
+              .filter((cat) => cat !== 'All Types')
               .map((cat) => (
                 <button
                   key={cat}
-                  onClick={() => navigate(`?category=${cat.toLowerCase()}`)}
+                  onClick={() => navigate(`?category=${cat.toLowerCase().replace(/\s+/g, '-')}`)}
                   className={`px-4 py-2 border border-gray-200 font-medium rounded-xl transition-all duration-300 shadow-md ${
-                    selectedCategory.toLowerCase() === cat.toLowerCase()
+                    formattedCategory === cat
                       ? 'bg-green-600 text-white hover:bg-green-500'
                       : 'bg-white text-gray-800 hover:bg-green-100 hover:text-gray-900'
                   }`}
@@ -232,7 +272,6 @@ const Hero1 = () => {
 
       <section className="py-5 font-poppins">
         <div className="w-full mx-auto px-4 sm:px-6 lg:px-24">
-          
           {loading ? (
             <p className="text-gray-600 text-lg text-center">Loading products...</p>
           ) : products.length === 0 ? (
@@ -270,7 +309,6 @@ const Hero1 = () => {
                     <StarRating rating={product.rating || 0} />
                     <span className="ml-2 text-xs text-gray-500">({product.rating || 0})</span>
                   </div>
-                  
                   <div className="flex pb-4 px-2 gap-4">
                     <button
                       className="flex-1 bg-gradient-to-r from-green-600 to-green-700 text-white font-semibold py-2 rounded-lg hover:from-green-700 hover:to-green-800 transition duration-300 shadow-md"
