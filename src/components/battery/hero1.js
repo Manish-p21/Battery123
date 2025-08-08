@@ -177,7 +177,7 @@ const Hero1 = () => {
 
   if (error) {
     return (
-      <div className="min-h-screen flex items-center justify-center font-poppins bg-gray-50">
+      <div className="min-h-screen flex items-center w-full justify-center font-poppins bg-gray-50">
         <div className="text-center p-6 bg-white rounded-xl shadow-lg">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Error Loading Products</h2>
           <p className="text-gray-600 mb-6">{error}</p>

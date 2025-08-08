@@ -194,7 +194,7 @@ const Products1 = () => {
 
   if (error) {
     return (
-      <div className="min-h-screen flex items-center justify-center font-poppins">
+      <div className="min-h-screen flex items-center w-full bg-white justify-center font-poppins">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Error Loading Products</h2>
           <p className="text-gray-600 mb-4">{error}</p>

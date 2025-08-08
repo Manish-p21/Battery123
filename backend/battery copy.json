@@ -1,0 +1,3006 @@
+[{
+  "_id": {
+    "$oid": "68638e98e357945e44446b17"
+  },
+  "id": "p0001",
+  "name": "Microtek 167Ah Chargers",
+  "description": "Fast-charging capability with enhanced durability.",
+  "category": "Chargers",
+  "brand": "Microtek",
+  "price": 13165.66,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.2,
+  "stock": 25,
+  "isBestSeller": false,
+  "tags": [
+    "charger",
+    "fast"
+  ],
+  "slug": "microtek-167ah-chargers",
+  "metaTitle": "Buy Microtek 167Ah Chargers Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Microtek Chargers - Microtek 167Ah Chargers with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/microtek-167ah-chargers",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Microtek 167Ah Chargers",
+    "image": "https://drive.google.com/uc?id=img0001",
+    "description": "Fast-charging capability with enhanced durability.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Microtek"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 13165.66,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.2,
+      "reviewCount": 170
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b18"
+  },
+  "id": "p0002",
+  "name": "Luminous 116Ah UPS",
+  "description": "Reliable UPS system with automatic voltage regulation.",
+  "category": "UPS",
+  "brand": "Luminous",
+  "price": 11252.41,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.5,
+  "stock": 27,
+  "isBestSeller": false,
+  "tags": [
+    "solar",
+    "inverter"
+  ],
+  "slug": "luminous-116ah-ups",
+  "metaTitle": "Buy Luminous 116Ah UPS Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Luminous UPS - Luminous 116Ah UPS with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/luminous-116ah-ups",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Luminous 116Ah UPS",
+    "image": "https://drive.google.com/uc?id=img0002",
+    "description": "Reliable UPS system with automatic voltage regulation.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Luminous"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 11252.41,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.5,
+      "reviewCount": 14
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b19"
+  },
+  "id": "p0003",
+  "name": "Exide 156Ah Inverters",
+  "description": "Reliable UPS system with automatic voltage regulation.",
+  "category": "Inverters",
+  "brand": "Exide",
+  "price": 11820.41,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 3.6,
+  "stock": 15,
+  "isBestSeller": true,
+  "tags": [
+    "UPS",
+    "microtek"
+  ],
+  "slug": "exide-156ah-inverters",
+  "metaTitle": "Buy Exide 156Ah Inverters Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Exide Inverters - Exide 156Ah Inverters with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/exide-156ah-inverters",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Exide 156Ah Inverters",
+    "image": "https://drive.google.com/uc?id=img0003",
+    "description": "Reliable UPS system with automatic voltage regulation.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Exide"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 11820.41,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 3.6,
+      "reviewCount": 176
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b1a"
+  },
+  "id": "p0004",
+  "name": "Exide 101Ah Solar",
+  "description": "Fast-charging capability with enhanced durability.",
+  "category": "Solar",
+  "brand": "Exide",
+  "price": 6824.22,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4,
+  "stock": 35,
+  "isBestSeller": false,
+  "tags": [
+    "backup",
+    "150Ah"
+  ],
+  "slug": "exide-101ah-solar",
+  "metaTitle": "Buy Exide 101Ah Solar Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Exide Solar - Exide 101Ah Solar with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/exide-101ah-solar",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Exide 101Ah Solar",
+    "image": "https://drive.google.com/uc?id=img0004",
+    "description": "Fast-charging capability with enhanced durability.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Exide"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 6824.22,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4,
+      "reviewCount": 87
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b1b"
+  },
+  "id": "p0005",
+  "name": "Exide 124Ah Chargers",
+  "description": "Reliable UPS system with automatic voltage regulation.",
+  "category": "Chargers",
+  "brand": "Exide",
+  "price": 5543.93,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.8,
+  "stock": 11,
+  "isBestSeller": true,
+  "tags": [
+    "solar",
+    "inverter"
+  ],
+  "slug": "exide-124ah-chargers",
+  "metaTitle": "Buy Exide 124Ah Chargers Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Exide Chargers - Exide 124Ah Chargers with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/exide-124ah-chargers",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Exide 124Ah Chargers",
+    "image": "https://drive.google.com/uc?id=img0005",
+    "description": "Reliable UPS system with automatic voltage regulation.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Exide"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 5543.93,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.8,
+      "reviewCount": 26
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b1c"
+  },
+  "id": "p0006",
+  "name": "Luminous 166Ah Chargers",
+  "description": "High-performance and long-lasting backup battery.",
+  "category": "Chargers",
+  "brand": "Luminous",
+  "price": 6392.11,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 3.7,
+  "stock": 17,
+  "isBestSeller": true,
+  "tags": [
+    "UPS",
+    "microtek"
+  ],
+  "slug": "luminous-166ah-chargers",
+  "metaTitle": "Buy Luminous 166Ah Chargers Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Luminous Chargers - Luminous 166Ah Chargers with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/luminous-166ah-chargers",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Luminous 166Ah Chargers",
+    "image": "https://drive.google.com/uc?id=img0006",
+    "description": "High-performance and long-lasting backup battery.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Luminous"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 6392.11,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 3.7,
+      "reviewCount": 178
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b1d"
+  },
+  "id": "p0007",
+  "name": "Exide 156Ah Batteries",
+  "description": "High-performance and long-lasting backup battery.",
+  "category": "Batteries",
+  "brand": "Exide",
+  "price": 9174.8,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4,
+  "stock": 3,
+  "isBestSeller": false,
+  "tags": [
+    "backup",
+    "150Ah"
+  ],
+  "slug": "exide-156ah-batteries",
+  "metaTitle": "Buy Exide 156Ah Batteries Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Exide Batteries - Exide 156Ah Batteries with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/exide-156ah-batteries",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Exide 156Ah Batteries",
+    "image": "https://drive.google.com/uc?id=img0007",
+    "description": "High-performance and long-lasting backup battery.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Exide"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 9174.8,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4,
+      "reviewCount": 148
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b1e"
+  },
+  "id": "p0008",
+  "name": "Luminous 119Ah Chargers",
+  "description": "High-performance and long-lasting backup battery.",
+  "category": "Chargers",
+  "brand": "Luminous",
+  "price": 7526.09,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.7,
+  "stock": 27,
+  "isBestSeller": true,
+  "tags": [
+    "charger",
+    "fast"
+  ],
+  "slug": "luminous-119ah-chargers",
+  "metaTitle": "Buy Luminous 119Ah Chargers Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Luminous Chargers - Luminous 119Ah Chargers with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/luminous-119ah-chargers",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Luminous 119Ah Chargers",
+    "image": "https://drive.google.com/uc?id=img0008",
+    "description": "High-performance and long-lasting backup battery.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Luminous"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 7526.09,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.7,
+      "reviewCount": 46
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b1f"
+  },
+  "id": "p0009",
+  "name": "Exide 134Ah Solar",
+  "description": "High-performance and long-lasting backup battery.",
+  "category": "Solar",
+  "brand": "Exide",
+  "price": 6859.08,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.2,
+  "stock": 13,
+  "isBestSeller": true,
+  "tags": [
+    "backup",
+    "150Ah"
+  ],
+  "slug": "exide-134ah-solar",
+  "metaTitle": "Buy Exide 134Ah Solar Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Exide Solar - Exide 134Ah Solar with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/exide-134ah-solar",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Exide 134Ah Solar",
+    "image": "https://drive.google.com/uc?id=img0009",
+    "description": "High-performance and long-lasting backup battery.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Exide"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 6859.08,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.2,
+      "reviewCount": 96
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b20"
+  },
+  "id": "p0010",
+  "name": "Luminous 170Ah Batteries",
+  "description": "High-performance and long-lasting backup battery.",
+  "category": "Batteries",
+  "brand": "Luminous",
+  "price": 8772.14,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 3.6,
+  "stock": 34,
+  "isBestSeller": true,
+  "tags": [
+    "backup",
+    "150Ah"
+  ],
+  "slug": "luminous-170ah-batteries",
+  "metaTitle": "Buy Luminous 170Ah Batteries Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Luminous Batteries - Luminous 170Ah Batteries with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/luminous-170ah-batteries",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Luminous 170Ah Batteries",
+    "image": "https://drive.google.com/uc?id=img0010",
+    "description": "High-performance and long-lasting backup battery.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Luminous"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 8772.14,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 3.6,
+      "reviewCount": 172
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b21"
+  },
+  "id": "p0011",
+  "name": "Exide 182Ah Solar",
+  "description": "Eco-friendly solar inverter with advanced controls.",
+  "category": "Solar",
+  "brand": "Exide",
+  "price": 4062.82,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.1,
+  "stock": 14,
+  "isBestSeller": true,
+  "tags": [
+    "backup",
+    "150Ah"
+  ],
+  "slug": "exide-182ah-solar",
+  "metaTitle": "Buy Exide 182Ah Solar Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Exide Solar - Exide 182Ah Solar with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/exide-182ah-solar",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Exide 182Ah Solar",
+    "image": "https://drive.google.com/uc?id=img0011",
+    "description": "Eco-friendly solar inverter with advanced controls.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Exide"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 4062.82,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.1,
+      "reviewCount": 69
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b22"
+  },
+  "id": "p0012",
+  "name": "Amaron 149Ah Solar",
+  "description": "Reliable UPS system with automatic voltage regulation.",
+  "category": "Solar",
+  "brand": "Amaron",
+  "price": 3269.7,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.8,
+  "stock": 36,
+  "isBestSeller": true,
+  "tags": [
+    "solar",
+    "inverter"
+  ],
+  "slug": "amaron-149ah-solar",
+  "metaTitle": "Buy Amaron 149Ah Solar Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Amaron Solar - Amaron 149Ah Solar with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/amaron-149ah-solar",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Amaron 149Ah Solar",
+    "image": "https://drive.google.com/uc?id=img0012",
+    "description": "Reliable UPS system with automatic voltage regulation.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Amaron"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 3269.7,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.8,
+      "reviewCount": 85
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b23"
+  },
+  "id": "p0013",
+  "name": "Livguard 107Ah Chargers",
+  "description": "Reliable UPS system with automatic voltage regulation.",
+  "category": "Chargers",
+  "brand": "Livguard",
+  "price": 5146.57,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.2,
+  "stock": 3,
+  "isBestSeller": true,
+  "tags": [
+    "UPS",
+    "microtek"
+  ],
+  "slug": "livguard-107ah-chargers",
+  "metaTitle": "Buy Livguard 107Ah Chargers Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Livguard Chargers - Livguard 107Ah Chargers with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/livguard-107ah-chargers",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Livguard 107Ah Chargers",
+    "image": "https://drive.google.com/uc?id=img0013",
+    "description": "Reliable UPS system with automatic voltage regulation.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Livguard"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 5146.57,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.2,
+      "reviewCount": 171
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b24"
+  },
+  "id": "p0014",
+  "name": "Exide 131Ah Batteries",
+  "description": "Fast-charging capability with enhanced durability.",
+  "category": "Batteries",
+  "brand": "Exide",
+  "price": 3492.02,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 3.8,
+  "stock": 21,
+  "isBestSeller": false,
+  "tags": [
+    "charger",
+    "fast"
+  ],
+  "slug": "exide-131ah-batteries",
+  "metaTitle": "Buy Exide 131Ah Batteries Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Exide Batteries - Exide 131Ah Batteries with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/exide-131ah-batteries",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Exide 131Ah Batteries",
+    "image": "https://drive.google.com/uc?id=img0014",
+    "description": "Fast-charging capability with enhanced durability.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Exide"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 3492.02,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 3.8,
+      "reviewCount": 37
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b25"
+  },
+  "id": "p0015",
+  "name": "Livguard 146Ah Inverters",
+  "description": "Ideal for home and office inverter systems.",
+  "category": "Inverters",
+  "brand": "Livguard",
+  "price": 13829.51,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.3,
+  "stock": 10,
+  "isBestSeller": false,
+  "tags": [
+    "automotive",
+    "12V"
+  ],
+  "slug": "livguard-146ah-inverters",
+  "metaTitle": "Buy Livguard 146Ah Inverters Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Livguard Inverters - Livguard 146Ah Inverters with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/livguard-146ah-inverters",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Livguard 146Ah Inverters",
+    "image": "https://drive.google.com/uc?id=img0015",
+    "description": "Ideal for home and office inverter systems.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Livguard"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 13829.51,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.3,
+      "reviewCount": 187
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b26"
+  },
+  "id": "p0016",
+  "name": "Amaron 110Ah Inverters",
+  "description": "Ideal for home and office inverter systems.",
+  "category": "Inverters",
+  "brand": "Amaron",
+  "price": 6107.41,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 5,
+  "stock": 12,
+  "isBestSeller": false,
+  "tags": [
+    "automotive",
+    "12V"
+  ],
+  "slug": "amaron-110ah-inverters",
+  "metaTitle": "Buy Amaron 110Ah Inverters Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Amaron Inverters - Amaron 110Ah Inverters with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/amaron-110ah-inverters",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Amaron 110Ah Inverters",
+    "image": "https://drive.google.com/uc?id=img0016",
+    "description": "Ideal for home and office inverter systems.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Amaron"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 6107.41,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 5,
+      "reviewCount": 82
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b27"
+  },
+  "id": "p0017",
+  "name": "Amaron 175Ah UPS",
+  "description": "Eco-friendly solar inverter with advanced controls.",
+  "category": "UPS",
+  "brand": "Amaron",
+  "price": 14332.41,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.9,
+  "stock": 16,
+  "isBestSeller": false,
+  "tags": [
+    "solar",
+    "inverter"
+  ],
+  "slug": "amaron-175ah-ups",
+  "metaTitle": "Buy Amaron 175Ah UPS Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Amaron UPS - Amaron 175Ah UPS with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/amaron-175ah-ups",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Amaron 175Ah UPS",
+    "image": "https://drive.google.com/uc?id=img0017",
+    "description": "Eco-friendly solar inverter with advanced controls.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Amaron"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 14332.41,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.9,
+      "reviewCount": 110
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b28"
+  },
+  "id": "p0018",
+  "name": "Su-Kam 199Ah Solar",
+  "description": "Fast-charging capability with enhanced durability.",
+  "category": "Solar",
+  "brand": "Su-Kam",
+  "price": 10320.74,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.1,
+  "stock": 30,
+  "isBestSeller": true,
+  "tags": [
+    "UPS",
+    "microtek"
+  ],
+  "slug": "su-kam-199ah-solar",
+  "metaTitle": "Buy Su-Kam 199Ah Solar Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Su-Kam Solar - Su-Kam 199Ah Solar with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/su-kam-199ah-solar",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Su-Kam 199Ah Solar",
+    "image": "https://drive.google.com/uc?id=img0018",
+    "description": "Fast-charging capability with enhanced durability.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Su-Kam"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 10320.74,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.1,
+      "reviewCount": 182
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b29"
+  },
+  "id": "p0019",
+  "name": "Amaron 177Ah Inverters",
+  "description": "Fast-charging capability with enhanced durability.",
+  "category": "Inverters",
+  "brand": "Amaron",
+  "price": 10561.58,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.3,
+  "stock": 20,
+  "isBestSeller": false,
+  "tags": [
+    "automotive",
+    "12V"
+  ],
+  "slug": "amaron-177ah-inverters",
+  "metaTitle": "Buy Amaron 177Ah Inverters Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Amaron Inverters - Amaron 177Ah Inverters with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/amaron-177ah-inverters",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Amaron 177Ah Inverters",
+    "image": "https://drive.google.com/uc?id=img0019",
+    "description": "Fast-charging capability with enhanced durability.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Amaron"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 10561.58,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.3,
+      "reviewCount": 55
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b2a"
+  },
+  "id": "p0020",
+  "name": "Su-Kam 173Ah Solar",
+  "description": "Ideal for home and office inverter systems.",
+  "category": "Solar",
+  "brand": "Su-Kam",
+  "price": 14937.62,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 3.9,
+  "stock": 48,
+  "isBestSeller": false,
+  "tags": [
+    "solar",
+    "inverter"
+  ],
+  "slug": "su-kam-173ah-solar",
+  "metaTitle": "Buy Su-Kam 173Ah Solar Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Su-Kam Solar - Su-Kam 173Ah Solar with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/su-kam-173ah-solar",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Su-Kam 173Ah Solar",
+    "image": "https://drive.google.com/uc?id=img0020",
+    "description": "Ideal for home and office inverter systems.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Su-Kam"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 14937.62,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 3.9,
+      "reviewCount": 61
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b2b"
+  },
+  "id": "p0021",
+  "name": "Livguard 111Ah Batteries",
+  "description": "Fast-charging capability with enhanced durability.",
+  "category": "Batteries",
+  "brand": "Livguard",
+  "price": 4120.96,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 3.7,
+  "stock": 33,
+  "isBestSeller": false,
+  "tags": [
+    "charger",
+    "fast"
+  ],
+  "slug": "livguard-111ah-batteries",
+  "metaTitle": "Buy Livguard 111Ah Batteries Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Livguard Batteries - Livguard 111Ah Batteries with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/livguard-111ah-batteries",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Livguard 111Ah Batteries",
+    "image": "https://drive.google.com/uc?id=img0021",
+    "description": "Fast-charging capability with enhanced durability.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Livguard"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 4120.96,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 3.7,
+      "reviewCount": 198
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b2c"
+  },
+  "id": "p0022",
+  "name": "Amaron 148Ah Chargers",
+  "description": "High-performance and long-lasting backup battery.",
+  "category": "Chargers",
+  "brand": "Amaron",
+  "price": 11669.1,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.6,
+  "stock": 41,
+  "isBestSeller": true,
+  "tags": [
+    "charger",
+    "fast"
+  ],
+  "slug": "amaron-148ah-chargers",
+  "metaTitle": "Buy Amaron 148Ah Chargers Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Amaron Chargers - Amaron 148Ah Chargers with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/amaron-148ah-chargers",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Amaron 148Ah Chargers",
+    "image": "https://drive.google.com/uc?id=img0022",
+    "description": "High-performance and long-lasting backup battery.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Amaron"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 11669.1,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.6,
+      "reviewCount": 116
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b2d"
+  },
+  "id": "p0023",
+  "name": "Livguard 177Ah Batteries",
+  "description": "Ideal for home and office inverter systems.",
+  "category": "Batteries",
+  "brand": "Livguard",
+  "price": 4184.08,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.4,
+  "stock": 24,
+  "isBestSeller": false,
+  "tags": [
+    "charger",
+    "fast"
+  ],
+  "slug": "livguard-177ah-batteries",
+  "metaTitle": "Buy Livguard 177Ah Batteries Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Livguard Batteries - Livguard 177Ah Batteries with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/livguard-177ah-batteries",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Livguard 177Ah Batteries",
+    "image": "https://drive.google.com/uc?id=img0023",
+    "description": "Ideal for home and office inverter systems.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Livguard"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 4184.08,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.4,
+      "reviewCount": 69
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b2e"
+  },
+  "id": "p0024",
+  "name": "Amaron 141Ah Solar",
+  "description": "High-performance and long-lasting backup battery.",
+  "category": "Solar",
+  "brand": "Amaron",
+  "price": 12402.43,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.5,
+  "stock": 31,
+  "isBestSeller": true,
+  "tags": [
+    "solar",
+    "inverter"
+  ],
+  "slug": "amaron-141ah-solar",
+  "metaTitle": "Buy Amaron 141Ah Solar Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Amaron Solar - Amaron 141Ah Solar with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/amaron-141ah-solar",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Amaron 141Ah Solar",
+    "image": "https://drive.google.com/uc?id=img0024",
+    "description": "High-performance and long-lasting backup battery.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Amaron"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 12402.43,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.5,
+      "reviewCount": 144
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b2f"
+  },
+  "id": "p0025",
+  "name": "Exide 180Ah Inverters",
+  "description": "High-performance and long-lasting backup battery.",
+  "category": "Inverters",
+  "brand": "Exide",
+  "price": 11483.25,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.6,
+  "stock": 0,
+  "isBestSeller": true,
+  "tags": [
+    "automotive",
+    "12V"
+  ],
+  "slug": "exide-180ah-inverters",
+  "metaTitle": "Buy Exide 180Ah Inverters Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Exide Inverters - Exide 180Ah Inverters with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/exide-180ah-inverters",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Exide 180Ah Inverters",
+    "image": "https://drive.google.com/uc?id=img0025",
+    "description": "High-performance and long-lasting backup battery.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Exide"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 11483.25,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.6,
+      "reviewCount": 149
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b30"
+  },
+  "id": "p0026",
+  "name": "Microtek 118Ah Chargers",
+  "description": "Fast-charging capability with enhanced durability.",
+  "category": "Chargers",
+  "brand": "Microtek",
+  "price": 8676.71,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.6,
+  "stock": 49,
+  "isBestSeller": true,
+  "tags": [
+    "automotive",
+    "12V"
+  ],
+  "slug": "microtek-118ah-chargers",
+  "metaTitle": "Buy Microtek 118Ah Chargers Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Microtek Chargers - Microtek 118Ah Chargers with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/microtek-118ah-chargers",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Microtek 118Ah Chargers",
+    "image": "https://drive.google.com/uc?id=img0026",
+    "description": "Fast-charging capability with enhanced durability.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Microtek"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 8676.71,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.6,
+      "reviewCount": 80
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b31"
+  },
+  "id": "p0027",
+  "name": "Livguard 137Ah Chargers",
+  "description": "Eco-friendly solar inverter with advanced controls.",
+  "category": "Chargers",
+  "brand": "Livguard",
+  "price": 13759.85,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.7,
+  "stock": 17,
+  "isBestSeller": true,
+  "tags": [
+    "solar",
+    "inverter"
+  ],
+  "slug": "livguard-137ah-chargers",
+  "metaTitle": "Buy Livguard 137Ah Chargers Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Livguard Chargers - Livguard 137Ah Chargers with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/livguard-137ah-chargers",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Livguard 137Ah Chargers",
+    "image": "https://drive.google.com/uc?id=img0027",
+    "description": "Eco-friendly solar inverter with advanced controls.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Livguard"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 13759.85,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.7,
+      "reviewCount": 143
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b32"
+  },
+  "id": "p0028",
+  "name": "Microtek 107Ah Solar",
+  "description": "Fast-charging capability with enhanced durability.",
+  "category": "Solar",
+  "brand": "Microtek",
+  "price": 6154.2,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.5,
+  "stock": 1,
+  "isBestSeller": false,
+  "tags": [
+    "charger",
+    "fast"
+  ],
+  "slug": "microtek-107ah-solar",
+  "metaTitle": "Buy Microtek 107Ah Solar Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Microtek Solar - Microtek 107Ah Solar with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/microtek-107ah-solar",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Microtek 107Ah Solar",
+    "image": "https://drive.google.com/uc?id=img0028",
+    "description": "Fast-charging capability with enhanced durability.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Microtek"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 6154.2,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.5,
+      "reviewCount": 164
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b33"
+  },
+  "id": "p0029",
+  "name": "Amaron 121Ah Inverters",
+  "description": "Ideal for home and office inverter systems.",
+  "category": "Inverters",
+  "brand": "Amaron",
+  "price": 4048.74,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 3.6,
+  "stock": 3,
+  "isBestSeller": true,
+  "tags": [
+    "automotive",
+    "12V"
+  ],
+  "slug": "amaron-121ah-inverters",
+  "metaTitle": "Buy Amaron 121Ah Inverters Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Amaron Inverters - Amaron 121Ah Inverters with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/amaron-121ah-inverters",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Amaron 121Ah Inverters",
+    "image": "https://drive.google.com/uc?id=img0029",
+    "description": "Ideal for home and office inverter systems.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Amaron"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 4048.74,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 3.6,
+      "reviewCount": 109
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b34"
+  },
+  "id": "p0030",
+  "name": "Amaron 104Ah Solar",
+  "description": "Eco-friendly solar inverter with advanced controls.",
+  "category": "Solar",
+  "brand": "Amaron",
+  "price": 10477.63,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.7,
+  "stock": 25,
+  "isBestSeller": false,
+  "tags": [
+    "UPS",
+    "microtek"
+  ],
+  "slug": "amaron-104ah-solar",
+  "metaTitle": "Buy Amaron 104Ah Solar Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Amaron Solar - Amaron 104Ah Solar with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/amaron-104ah-solar",
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Amaron 104Ah Solar",
+    "image": "https://drive.google.com/uc?id=img0030",
+    "description": "Eco-friendly solar inverter with advanced controls.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Amaron"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 10477.63,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.7,
+      "reviewCount": 189
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b35"
+  },
+  "id": "p0037",
+  "name": "Luminous 142Ah Truck Battery",
+  "description": "Reliable and efficient Truck Batterie battery with long life and quick recharge support.",
+  "category": "Truck Batteries",
+  "brand": "Luminous",
+  "price": 10824.12,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.6,
+  "stock": 14,
+  "isBestSeller": true,
+  "tags": [
+    "battery",
+    "durable",
+    "reliable"
+  ],
+  "slug": "luminous-142ah-truck-battery",
+  "metaTitle": "Buy Luminous 142Ah Truck Battery Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Luminous - Luminous 142Ah Truck Battery with fast delivery, best warranty, and affordable pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/luminous-142ah-truck-battery",
+  "specifications": [
+    {
+      "label": "Capacity",
+      "value": "154Ah"
+    },
+    {
+      "label": "Voltage",
+      "value": "12V"
+    },
+    {
+      "label": "Weight",
+      "value": "40kg"
+    },
+    {
+      "label": "Dimensions",
+      "value": "51 x 20 x 30 cm"
+    },
+    {
+      "label": "Charging Time",
+      "value": "7 hours"
+    },
+    {
+      "label": "Connector Type",
+      "value": "Standard Terminal"
+    }
+  ],
+  "reviews": [
+    {
+      "rating": 4.3,
+      "comment": "Walk through product expert trial or.",
+      "author": "Melissa Frazier",
+      "date": "2025-06-03T00:00:00Z"
+    },
+    {
+      "rating": 4.3,
+      "comment": "History least politics owner yes.",
+      "author": "Brandy Williams",
+      "date": "2025-05-31T00:00:00Z"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is this battery suitable for all types of vehicles?",
+      "answer": "Please check your vehicle compatibility. Most common models are supported."
+    },
+    {
+      "question": "What is the warranty period?",
+      "answer": "This battery comes with a 2-year warranty covering manufacturing defects."
+    }
+  ],
+  "warranty": {
+    "duration": "2 years",
+    "terms": "Covers manufacturing defects and performance issues under normal use. Contact support for claims."
+  },
+  "compatibility": [
+    "Standard 12V Battery Systems"
+  ],
+  "features": [
+    "Fast charging",
+    "Overcharge protection",
+    "Leak-proof design",
+    "LED charge status"
+  ],
+  "relatedProducts": [],
+  "deliveryInfo": {
+    "estimatedDelivery": "3-5 business days",
+    "shippingCost": "Free on orders over ₹50"
+  },
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Luminous 142Ah Truck Battery",
+    "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/sample_battery.jpg",
+    "description": "Reliable and efficient battery with long life and fast recharge.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Luminous"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 11192.8,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.batteryboss.in/product/luminous-142ah-truck-battery"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.3,
+      "reviewCount": 268
+    }
+  },
+  "createdAt": {
+    "$date": "2025-06-12T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b36"
+  },
+  "id": "p0038",
+  "name": "Exide 115Ah Bike Battery",
+  "description": "Reliable and efficient Bike Batterie battery with long life and quick recharge support.",
+  "category": "Bike Batteries",
+  "brand": "Exide",
+  "price": 5120.83,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4,
+  "stock": 34,
+  "isBestSeller": true,
+  "tags": [
+    "battery",
+    "durable",
+    "reliable"
+  ],
+  "slug": "exide-115ah-bike-battery",
+  "metaTitle": "Buy Exide 115Ah Bike Battery Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Exide - Exide 115Ah Bike Battery with fast delivery, best warranty, and affordable pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/exide-115ah-bike-battery",
+  "specifications": [
+    {
+      "label": "Capacity",
+      "value": "156Ah"
+    },
+    {
+      "label": "Voltage",
+      "value": "12V"
+    },
+    {
+      "label": "Weight",
+      "value": "33kg"
+    },
+    {
+      "label": "Dimensions",
+      "value": "49 x 20 x 30 cm"
+    },
+    {
+      "label": "Charging Time",
+      "value": "8 hours"
+    },
+    {
+      "label": "Connector Type",
+      "value": "Round Terminal"
+    }
+  ],
+  "reviews": [
+    {
+      "rating": 4.9,
+      "comment": "Argue cost office parent challenge.",
+      "author": "Luke Estes",
+      "date": "2025-06-11T00:00:00Z"
+    },
+    {
+      "rating": 4.4,
+      "comment": "Network note last matter race.",
+      "author": "Maria Taylor",
+      "date": "2025-06-03T00:00:00Z"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is this battery suitable for all types of vehicles?",
+      "answer": "Please check your vehicle compatibility. Most common models are supported."
+    },
+    {
+      "question": "What is the warranty period?",
+      "answer": "This battery comes with a 2-year warranty covering manufacturing defects."
+    }
+  ],
+  "warranty": {
+    "duration": "2 years",
+    "terms": "Covers manufacturing defects and performance issues under normal use. Contact support for claims."
+  },
+  "compatibility": [
+    "Standard 12V Battery Systems"
+  ],
+  "features": [
+    "Fast charging",
+    "Overcharge protection",
+    "Leak-proof design",
+    "LED charge status"
+  ],
+  "relatedProducts": [],
+  "deliveryInfo": {
+    "estimatedDelivery": "3-5 business days",
+    "shippingCost": "Free on orders over ₹50"
+  },
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Exide 115Ah Bike Battery",
+    "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/sample_battery.jpg",
+    "description": "Reliable and efficient battery with long life and fast recharge.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Exide"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 5367.29,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.batteryboss.in/product/exide-115ah-bike-battery"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.3,
+      "reviewCount": 237
+    }
+  },
+  "createdAt": {
+    "$date": "2025-06-17T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b37"
+  },
+  "id": "p0039",
+  "name": "Microtek 125Ah Car Battery",
+  "description": "Reliable and efficient Car Batterie battery with long life and quick recharge support.",
+  "category": "Car Batteries",
+  "brand": "Microtek",
+  "price": 5736.2,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.3,
+  "stock": 21,
+  "isBestSeller": false,
+  "tags": [
+    "battery",
+    "durable",
+    "reliable"
+  ],
+  "slug": "microtek-125ah-car-battery",
+  "metaTitle": "Buy Microtek 125Ah Car Battery Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Microtek - Microtek 125Ah Car Battery with fast delivery, best warranty, and affordable pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/microtek-125ah-car-battery",
+  "specifications": [
+    {
+      "label": "Capacity",
+      "value": "157Ah"
+    },
+    {
+      "label": "Voltage",
+      "value": "12V"
+    },
+    {
+      "label": "Weight",
+      "value": "51kg"
+    },
+    {
+      "label": "Dimensions",
+      "value": "54 x 20 x 30 cm"
+    },
+    {
+      "label": "Charging Time",
+      "value": "6 hours"
+    },
+    {
+      "label": "Connector Type",
+      "value": "Round Terminal"
+    }
+  ],
+  "reviews": [
+    {
+      "rating": 5,
+      "comment": "Win leg growth but range.",
+      "author": "Timothy Maxwell",
+      "date": "2025-05-29T00:00:00Z"
+    },
+    {
+      "rating": 3.5,
+      "comment": "Require should life black.",
+      "author": "Ryan Sawyer",
+      "date": "2025-05-26T00:00:00Z"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is this battery suitable for all types of vehicles?",
+      "answer": "Please check your vehicle compatibility. Most common models are supported."
+    },
+    {
+      "question": "What is the warranty period?",
+      "answer": "This battery comes with a 2-year warranty covering manufacturing defects."
+    }
+  ],
+  "warranty": {
+    "duration": "2 years",
+    "terms": "Covers manufacturing defects and performance issues under normal use. Contact support for claims."
+  },
+  "compatibility": [
+    "Microtek Inverters",
+    "Luminous Inverters"
+  ],
+  "features": [
+    "Fast charging",
+    "Overcharge protection",
+    "Leak-proof design",
+    "LED charge status"
+  ],
+  "relatedProducts": [],
+  "deliveryInfo": {
+    "estimatedDelivery": "3-5 business days",
+    "shippingCost": "Free on orders over ₹50"
+  },
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Microtek 125Ah Car Battery",
+    "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/sample_battery.jpg",
+    "description": "Reliable and efficient battery with long life and fast recharge.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Microtek"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 4771.2,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.batteryboss.in/product/microtek-125ah-car-battery"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.3,
+      "reviewCount": 147
+    }
+  },
+  "createdAt": {
+    "$date": "2025-06-03T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b38"
+  },
+  "id": "p0040",
+  "name": "SF Sonic 118Ah Inverter Battery",
+  "description": "Reliable and efficient Inverter Batterie battery with long life and quick recharge support.",
+  "category": "Inverter Batteries",
+  "brand": "SF Sonic",
+  "price": 11319.14,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.4,
+  "stock": 37,
+  "isBestSeller": true,
+  "tags": [
+    "battery",
+    "durable",
+    "reliable"
+  ],
+  "slug": "sf-sonic-118ah-inverter-battery",
+  "metaTitle": "Buy SF Sonic 118Ah Inverter Battery Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop SF Sonic - SF Sonic 118Ah Inverter Battery with fast delivery, best warranty, and affordable pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/sf-sonic-118ah-inverter-battery",
+  "specifications": [
+    {
+      "label": "Capacity",
+      "value": "119Ah"
+    },
+    {
+      "label": "Voltage",
+      "value": "12V"
+    },
+    {
+      "label": "Weight",
+      "value": "30kg"
+    },
+    {
+      "label": "Dimensions",
+      "value": "51 x 20 x 30 cm"
+    },
+    {
+      "label": "Charging Time",
+      "value": "6 hours"
+    },
+    {
+      "label": "Connector Type",
+      "value": "Flat Terminal"
+    }
+  ],
+  "reviews": [
+    {
+      "rating": 4.1,
+      "comment": "Under similar situation support take agency.",
+      "author": "Maria Hendricks",
+      "date": "2025-06-05T00:00:00Z"
+    },
+    {
+      "rating": 3.6,
+      "comment": "Teach middle hair kid treat.",
+      "author": "Michael Garrett",
+      "date": "2025-05-30T00:00:00Z"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is this battery suitable for all types of vehicles?",
+      "answer": "Please check your vehicle compatibility. Most common models are supported."
+    },
+    {
+      "question": "What is the warranty period?",
+      "answer": "This battery comes with a 2-year warranty covering manufacturing defects."
+    }
+  ],
+  "warranty": {
+    "duration": "2 years",
+    "terms": "Covers manufacturing defects and performance issues under normal use. Contact support for claims."
+  },
+  "compatibility": [
+    "Heavy Vehicle Battery Compartments"
+  ],
+  "features": [
+    "Fast charging",
+    "Overcharge protection",
+    "Leak-proof design",
+    "LED charge status"
+  ],
+  "relatedProducts": [],
+  "deliveryInfo": {
+    "estimatedDelivery": "3-5 business days",
+    "shippingCost": "Free on orders over ₹50"
+  },
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "SF Sonic 118Ah Inverter Battery",
+    "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/sample_battery.jpg",
+    "description": "Reliable and efficient battery with long life and fast recharge.",
+    "brand": {
+      "@type": "Brand",
+      "name": "SF Sonic"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 5411.53,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.batteryboss.in/product/sf-sonic-118ah-inverter-battery"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 3.8,
+      "reviewCount": 242
+    }
+  },
+  "createdAt": {
+    "$date": "2025-06-10T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b39"
+  },
+  "id": "p0041",
+  "name": "SF Sonic 177Ah Inverter Battery",
+  "description": "Reliable and efficient Inverter Batterie battery with long life and quick recharge support.",
+  "category": "Inverter Batteries",
+  "brand": "SF Sonic",
+  "price": 9534.08,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.2,
+  "stock": 33,
+  "isBestSeller": false,
+  "tags": [
+    "battery",
+    "durable",
+    "reliable"
+  ],
+  "slug": "sf-sonic-177ah-inverter-battery",
+  "metaTitle": "Buy SF Sonic 177Ah Inverter Battery Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop SF Sonic - SF Sonic 177Ah Inverter Battery with fast delivery, best warranty, and affordable pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/sf-sonic-177ah-inverter-battery",
+  "specifications": [
+    {
+      "label": "Capacity",
+      "value": "188Ah"
+    },
+    {
+      "label": "Voltage",
+      "value": "12V"
+    },
+    {
+      "label": "Weight",
+      "value": "42kg"
+    },
+    {
+      "label": "Dimensions",
+      "value": "51 x 20 x 30 cm"
+    },
+    {
+      "label": "Charging Time",
+      "value": "9 hours"
+    },
+    {
+      "label": "Connector Type",
+      "value": "Round Terminal"
+    }
+  ],
+  "reviews": [
+    {
+      "rating": 4.5,
+      "comment": "Page dark close management.",
+      "author": "Andrew Smith",
+      "date": "2025-06-09T00:00:00Z"
+    },
+    {
+      "rating": 3.8,
+      "comment": "General allow truth buy choice.",
+      "author": "Mr. James Patterson",
+      "date": "2025-06-12T00:00:00Z"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is this battery suitable for all types of vehicles?",
+      "answer": "Please check your vehicle compatibility. Most common models are supported."
+    },
+    {
+      "question": "What is the warranty period?",
+      "answer": "This battery comes with a 2-year warranty covering manufacturing defects."
+    }
+  ],
+  "warranty": {
+    "duration": "2 years",
+    "terms": "Covers manufacturing defects and performance issues under normal use. Contact support for claims."
+  },
+  "compatibility": [
+    "Microtek Inverters",
+    "Luminous Inverters"
+  ],
+  "features": [
+    "Fast charging",
+    "Overcharge protection",
+    "Leak-proof design",
+    "LED charge status"
+  ],
+  "relatedProducts": [],
+  "deliveryInfo": {
+    "estimatedDelivery": "3-5 business days",
+    "shippingCost": "Free on orders over ₹50"
+  },
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "SF Sonic 177Ah Inverter Battery",
+    "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/sample_battery.jpg",
+    "description": "Reliable and efficient battery with long life and fast recharge.",
+    "brand": {
+      "@type": "Brand",
+      "name": "SF Sonic"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 11082.22,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.batteryboss.in/product/sf-sonic-177ah-inverter-battery"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.4,
+      "reviewCount": 140
+    }
+  },
+  "createdAt": {
+    "$date": "2025-06-18T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b3a"
+  },
+  "id": "p0042",
+  "name": "Luminous 160Ah Industrial Battery",
+  "description": "Reliable and efficient Industrial Batterie battery with long life and quick recharge support.",
+  "category": "Industrial Batteries",
+  "brand": "Luminous",
+  "price": 9988.06,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.4,
+  "stock": 44,
+  "isBestSeller": true,
+  "tags": [
+    "battery",
+    "durable",
+    "reliable"
+  ],
+  "slug": "luminous-160ah-industrial-battery",
+  "metaTitle": "Buy Luminous 160Ah Industrial Battery Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Luminous - Luminous 160Ah Industrial Battery with fast delivery, best warranty, and affordable pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/luminous-160ah-industrial-battery",
+  "specifications": [
+    {
+      "label": "Capacity",
+      "value": "182Ah"
+    },
+    {
+      "label": "Voltage",
+      "value": "12V"
+    },
+    {
+      "label": "Weight",
+      "value": "51kg"
+    },
+    {
+      "label": "Dimensions",
+      "value": "54 x 20 x 30 cm"
+    },
+    {
+      "label": "Charging Time",
+      "value": "6 hours"
+    },
+    {
+      "label": "Connector Type",
+      "value": "Flat Terminal"
+    }
+  ],
+  "reviews": [
+    {
+      "rating": 4.6,
+      "comment": "Money well weight study.",
+      "author": "Taylor Davis",
+      "date": "2025-05-29T00:00:00Z"
+    },
+    {
+      "rating": 4.1,
+      "comment": "Difference poor much interview direction.",
+      "author": "Leslie Brown",
+      "date": "2025-05-29T00:00:00Z"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is this battery suitable for all types of vehicles?",
+      "answer": "Please check your vehicle compatibility. Most common models are supported."
+    },
+    {
+      "question": "What is the warranty period?",
+      "answer": "This battery comes with a 2-year warranty covering manufacturing defects."
+    }
+  ],
+  "warranty": {
+    "duration": "2 years",
+    "terms": "Covers manufacturing defects and performance issues under normal use. Contact support for claims."
+  },
+  "compatibility": [
+    "Standard 12V Battery Systems"
+  ],
+  "features": [
+    "Fast charging",
+    "Overcharge protection",
+    "Leak-proof design",
+    "LED charge status"
+  ],
+  "relatedProducts": [],
+  "deliveryInfo": {
+    "estimatedDelivery": "3-5 business days",
+    "shippingCost": "Free on orders over ₹50"
+  },
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Luminous 160Ah Industrial Battery",
+    "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/sample_battery.jpg",
+    "description": "Reliable and efficient battery with long life and fast recharge.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Luminous"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 14409.85,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.batteryboss.in/product/luminous-160ah-industrial-battery"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.5,
+      "reviewCount": 214
+    }
+  },
+  "createdAt": {
+    "$date": "2025-06-07T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b3b"
+  },
+  "id": "p0043",
+  "name": "SF Sonic 115Ah Car Battery",
+  "description": "Reliable and efficient Car Batterie battery with long life and quick recharge support.",
+  "category": "Car Batteries",
+  "brand": "SF Sonic",
+  "price": 12820.77,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.4,
+  "stock": 49,
+  "isBestSeller": false,
+  "tags": [
+    "battery",
+    "durable",
+    "reliable"
+  ],
+  "slug": "sf-sonic-115ah-car-battery",
+  "metaTitle": "Buy SF Sonic 115Ah Car Battery Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop SF Sonic - SF Sonic 115Ah Car Battery with fast delivery, best warranty, and affordable pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/sf-sonic-115ah-car-battery",
+  "specifications": [
+    {
+      "label": "Capacity",
+      "value": "144Ah"
+    },
+    {
+      "label": "Voltage",
+      "value": "12V"
+    },
+    {
+      "label": "Weight",
+      "value": "46kg"
+    },
+    {
+      "label": "Dimensions",
+      "value": "53 x 20 x 30 cm"
+    },
+    {
+      "label": "Charging Time",
+      "value": "8 hours"
+    },
+    {
+      "label": "Connector Type",
+      "value": "Round Terminal"
+    }
+  ],
+  "reviews": [
+    {
+      "rating": 4.6,
+      "comment": "Different stay my color.",
+      "author": "Robert Good",
+      "date": "2025-06-26T00:00:00Z"
+    },
+    {
+      "rating": 3.5,
+      "comment": "Deal suffer indicate song design above shoulder.",
+      "author": "Allison Woods",
+      "date": "2025-06-29T00:00:00Z"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is this battery suitable for all types of vehicles?",
+      "answer": "Please check your vehicle compatibility. Most common models are supported."
+    },
+    {
+      "question": "What is the warranty period?",
+      "answer": "This battery comes with a 2-year warranty covering manufacturing defects."
+    }
+  ],
+  "warranty": {
+    "duration": "2 years",
+    "terms": "Covers manufacturing defects and performance issues under normal use. Contact support for claims."
+  },
+  "compatibility": [
+    "Two-Wheeler Battery Slots"
+  ],
+  "features": [
+    "Fast charging",
+    "Overcharge protection",
+    "Leak-proof design",
+    "LED charge status"
+  ],
+  "relatedProducts": [],
+  "deliveryInfo": {
+    "estimatedDelivery": "3-5 business days",
+    "shippingCost": "Free on orders over ₹50"
+  },
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "SF Sonic 115Ah Car Battery",
+    "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/sample_battery.jpg",
+    "description": "Reliable and efficient battery with long life and fast recharge.",
+    "brand": {
+      "@type": "Brand",
+      "name": "SF Sonic"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 12819.23,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.batteryboss.in/product/sf-sonic-115ah-car-battery"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.7,
+      "reviewCount": 128
+    }
+  },
+  "createdAt": {
+    "$date": "2025-07-04T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b3c"
+  },
+  "id": "p0044",
+  "name": "Luminous 184Ah Industrial Battery",
+  "description": "Reliable and efficient Industrial Batterie battery with long life and quick recharge support.",
+  "category": "Industrial Batteries",
+  "brand": "Luminous",
+  "price": 10761.8,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 3.9,
+  "stock": 49,
+  "isBestSeller": true,
+  "tags": [
+    "battery",
+    "durable",
+    "reliable"
+  ],
+  "slug": "luminous-184ah-industrial-battery",
+  "metaTitle": "Buy Luminous 184Ah Industrial Battery Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Luminous - Luminous 184Ah Industrial Battery with fast delivery, best warranty, and affordable pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/luminous-184ah-industrial-battery",
+  "specifications": [
+    {
+      "label": "Capacity",
+      "value": "142Ah"
+    },
+    {
+      "label": "Voltage",
+      "value": "12V"
+    },
+    {
+      "label": "Weight",
+      "value": "36kg"
+    },
+    {
+      "label": "Dimensions",
+      "value": "52 x 20 x 30 cm"
+    },
+    {
+      "label": "Charging Time",
+      "value": "9 hours"
+    },
+    {
+      "label": "Connector Type",
+      "value": "Standard Terminal"
+    }
+  ],
+  "reviews": [
+    {
+      "rating": 4.7,
+      "comment": "But floor dinner create final.",
+      "author": "Alyssa Fernandez",
+      "date": "2025-05-21T00:00:00Z"
+    },
+    {
+      "rating": 4.1,
+      "comment": "True including character mission reason thank current.",
+      "author": "Michael Roberts",
+      "date": "2025-05-17T00:00:00Z"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is this battery suitable for all types of vehicles?",
+      "answer": "Please check your vehicle compatibility. Most common models are supported."
+    },
+    {
+      "question": "What is the warranty period?",
+      "answer": "This battery comes with a 2-year warranty covering manufacturing defects."
+    }
+  ],
+  "warranty": {
+    "duration": "2 years",
+    "terms": "Covers manufacturing defects and performance issues under normal use. Contact support for claims."
+  },
+  "compatibility": [
+    "Heavy Vehicle Battery Compartments"
+  ],
+  "features": [
+    "Fast charging",
+    "Overcharge protection",
+    "Leak-proof design",
+    "LED charge status"
+  ],
+  "relatedProducts": [],
+  "deliveryInfo": {
+    "estimatedDelivery": "3-5 business days",
+    "shippingCost": "Free on orders over ₹50"
+  },
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Luminous 184Ah Industrial Battery",
+    "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/sample_battery.jpg",
+    "description": "Reliable and efficient battery with long life and fast recharge.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Luminous"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 14622.97,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.batteryboss.in/product/luminous-184ah-industrial-battery"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.6,
+      "reviewCount": 214
+    }
+  },
+  "createdAt": {
+    "$date": "2025-05-28T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b3d"
+  },
+  "id": "p0045",
+  "name": "Amaron 150Ah Industrial Battery",
+  "description": "Reliable and efficient Industrial Batterie battery with long life and quick recharge support.",
+  "category": "Industrial Batteries",
+  "brand": "Amaron",
+  "price": 5475.13,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.2,
+  "stock": 41,
+  "isBestSeller": false,
+  "tags": [
+    "battery",
+    "durable",
+    "reliable"
+  ],
+  "slug": "amaron-150ah-industrial-battery",
+  "metaTitle": "Buy Amaron 150Ah Industrial Battery Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Amaron - Amaron 150Ah Industrial Battery with fast delivery, best warranty, and affordable pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/amaron-150ah-industrial-battery",
+  "specifications": [
+    {
+      "label": "Capacity",
+      "value": "179Ah"
+    },
+    {
+      "label": "Voltage",
+      "value": "12V"
+    },
+    {
+      "label": "Weight",
+      "value": "43kg"
+    },
+    {
+      "label": "Dimensions",
+      "value": "43 x 20 x 30 cm"
+    },
+    {
+      "label": "Charging Time",
+      "value": "6 hours"
+    },
+    {
+      "label": "Connector Type",
+      "value": "Flat Terminal"
+    }
+  ],
+  "reviews": [
+    {
+      "rating": 4.2,
+      "comment": "Responsibility magazine now view number rate.",
+      "author": "Barbara Torres",
+      "date": "2025-06-16T00:00:00Z"
+    },
+    {
+      "rating": 3.8,
+      "comment": "They tell power discuss west.",
+      "author": "Benjamin Mccarthy",
+      "date": "2025-06-07T00:00:00Z"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is this battery suitable for all types of vehicles?",
+      "answer": "Please check your vehicle compatibility. Most common models are supported."
+    },
+    {
+      "question": "What is the warranty period?",
+      "answer": "This battery comes with a 2-year warranty covering manufacturing defects."
+    }
+  ],
+  "warranty": {
+    "duration": "2 years",
+    "terms": "Covers manufacturing defects and performance issues under normal use. Contact support for claims."
+  },
+  "compatibility": [
+    "Heavy Vehicle Battery Compartments"
+  ],
+  "features": [
+    "Fast charging",
+    "Overcharge protection",
+    "Leak-proof design",
+    "LED charge status"
+  ],
+  "relatedProducts": [],
+  "deliveryInfo": {
+    "estimatedDelivery": "3-5 business days",
+    "shippingCost": "Free on orders over ₹50"
+  },
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Amaron 150Ah Industrial Battery",
+    "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/sample_battery.jpg",
+    "description": "Reliable and efficient battery with long life and fast recharge.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Amaron"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 5700.4,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.batteryboss.in/product/amaron-150ah-industrial-battery"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.4,
+      "reviewCount": 119
+    }
+  },
+  "createdAt": {
+    "$date": "2025-06-18T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b3e"
+  },
+  "id": "p0046",
+  "name": "Luminous 162Ah Truck Battery",
+  "description": "Reliable and efficient Truck Batterie battery with long life and quick recharge support.",
+  "category": "Truck Batteries",
+  "brand": "Luminous",
+  "price": 10942.75,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 3.8,
+  "stock": 32,
+  "isBestSeller": true,
+  "tags": [
+    "battery",
+    "durable",
+    "reliable"
+  ],
+  "slug": "luminous-162ah-truck-battery",
+  "metaTitle": "Buy Luminous 162Ah Truck Battery Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Luminous - Luminous 162Ah Truck Battery with fast delivery, best warranty, and affordable pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/luminous-162ah-truck-battery",
+  "specifications": [
+    {
+      "label": "Capacity",
+      "value": "155Ah"
+    },
+    {
+      "label": "Voltage",
+      "value": "12V"
+    },
+    {
+      "label": "Weight",
+      "value": "48kg"
+    },
+    {
+      "label": "Dimensions",
+      "value": "53 x 20 x 30 cm"
+    },
+    {
+      "label": "Charging Time",
+      "value": "6 hours"
+    },
+    {
+      "label": "Connector Type",
+      "value": "Flat Terminal"
+    }
+  ],
+  "reviews": [
+    {
+      "rating": 4.9,
+      "comment": "Behind color any subject cultural might.",
+      "author": "Aaron Harrell",
+      "date": "2025-06-16T00:00:00Z"
+    },
+    {
+      "rating": 3.9,
+      "comment": "Already look expert teach program myself guy.",
+      "author": "Linda Butler",
+      "date": "2025-06-11T00:00:00Z"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is this battery suitable for all types of vehicles?",
+      "answer": "Please check your vehicle compatibility. Most common models are supported."
+    },
+    {
+      "question": "What is the warranty period?",
+      "answer": "This battery comes with a 2-year warranty covering manufacturing defects."
+    }
+  ],
+  "warranty": {
+    "duration": "2 years",
+    "terms": "Covers manufacturing defects and performance issues under normal use. Contact support for claims."
+  },
+  "compatibility": [
+    "Heavy Vehicle Battery Compartments"
+  ],
+  "features": [
+    "Fast charging",
+    "Overcharge protection",
+    "Leak-proof design",
+    "LED charge status"
+  ],
+  "relatedProducts": [],
+  "deliveryInfo": {
+    "estimatedDelivery": "3-5 business days",
+    "shippingCost": "Free on orders over ₹50"
+  },
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Luminous 162Ah Truck Battery",
+    "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/sample_battery.jpg",
+    "description": "Reliable and efficient battery with long life and fast recharge.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Luminous"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 11279.71,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.batteryboss.in/product/luminous-162ah-truck-battery"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.5,
+      "reviewCount": 129
+    }
+  },
+  "createdAt": {
+    "$date": "2025-06-26T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b3f"
+  },
+  "id": "p0047",
+  "name": "Amaron 110Ah Car Battery",
+  "description": "Reliable and efficient Car Batterie battery with long life and quick recharge support.",
+  "category": "Car Batteries",
+  "brand": "Amaron",
+  "price": 7380.92,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 3.9,
+  "stock": 12,
+  "isBestSeller": false,
+  "tags": [
+    "battery",
+    "durable",
+    "reliable"
+  ],
+  "slug": "amaron-110ah-car-battery",
+  "metaTitle": "Buy Amaron 110Ah Car Battery Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Amaron - Amaron 110Ah Car Battery with fast delivery, best warranty, and affordable pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/amaron-110ah-car-battery",
+  "specifications": [
+    {
+      "label": "Capacity",
+      "value": "159Ah"
+    },
+    {
+      "label": "Voltage",
+      "value": "12V"
+    },
+    {
+      "label": "Weight",
+      "value": "42kg"
+    },
+    {
+      "label": "Dimensions",
+      "value": "43 x 20 x 30 cm"
+    },
+    {
+      "label": "Charging Time",
+      "value": "6 hours"
+    },
+    {
+      "label": "Connector Type",
+      "value": "Round Terminal"
+    }
+  ],
+  "reviews": [
+    {
+      "rating": 4.9,
+      "comment": "Child position such her green only may.",
+      "author": "Nichole Alvarez",
+      "date": "2025-05-12T00:00:00Z"
+    },
+    {
+      "rating": 4.1,
+      "comment": "Them already hair receive follow door position.",
+      "author": "Adam Harrison",
+      "date": "2025-05-02T00:00:00Z"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is this battery suitable for all types of vehicles?",
+      "answer": "Please check your vehicle compatibility. Most common models are supported."
+    },
+    {
+      "question": "What is the warranty period?",
+      "answer": "This battery comes with a 2-year warranty covering manufacturing defects."
+    }
+  ],
+  "warranty": {
+    "duration": "2 years",
+    "terms": "Covers manufacturing defects and performance issues under normal use. Contact support for claims."
+  },
+  "compatibility": [
+    "Heavy Vehicle Battery Compartments"
+  ],
+  "features": [
+    "Fast charging",
+    "Overcharge protection",
+    "Leak-proof design",
+    "LED charge status"
+  ],
+  "relatedProducts": [],
+  "deliveryInfo": {
+    "estimatedDelivery": "3-5 business days",
+    "shippingCost": "Free on orders over ₹50"
+  },
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Amaron 110Ah Car Battery",
+    "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/sample_battery.jpg",
+    "description": "Reliable and efficient battery with long life and fast recharge.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Amaron"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 10934.37,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.batteryboss.in/product/amaron-110ah-car-battery"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.6,
+      "reviewCount": 256
+    }
+  },
+  "createdAt": {
+    "$date": "2025-05-16T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b40"
+  },
+  "id": "p0048",
+  "name": "Microtek 154Ah Bike Battery",
+  "description": "Reliable and efficient Bike Batterie battery with long life and quick recharge support.",
+  "category": "Bike Batteries",
+  "brand": "Microtek",
+  "price": 6369.49,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.4,
+  "stock": 24,
+  "isBestSeller": true,
+  "tags": [
+    "battery",
+    "durable",
+    "reliable"
+  ],
+  "slug": "microtek-154ah-bike-battery",
+  "metaTitle": "Buy Microtek 154Ah Bike Battery Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Microtek - Microtek 154Ah Bike Battery with fast delivery, best warranty, and affordable pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/microtek-154ah-bike-battery",
+  "specifications": [
+    {
+      "label": "Capacity",
+      "value": "157Ah"
+    },
+    {
+      "label": "Voltage",
+      "value": "12V"
+    },
+    {
+      "label": "Weight",
+      "value": "53kg"
+    },
+    {
+      "label": "Dimensions",
+      "value": "48 x 20 x 30 cm"
+    },
+    {
+      "label": "Charging Time",
+      "value": "6 hours"
+    },
+    {
+      "label": "Connector Type",
+      "value": "Standard Terminal"
+    }
+  ],
+  "reviews": [
+    {
+      "rating": 4,
+      "comment": "Big no field want or.",
+      "author": "Jennifer Jordan",
+      "date": "2025-06-09T00:00:00Z"
+    },
+    {
+      "rating": 3.8,
+      "comment": "Sign even onto huge debate education.",
+      "author": "Kimberly Bowman",
+      "date": "2025-06-13T00:00:00Z"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is this battery suitable for all types of vehicles?",
+      "answer": "Please check your vehicle compatibility. Most common models are supported."
+    },
+    {
+      "question": "What is the warranty period?",
+      "answer": "This battery comes with a 2-year warranty covering manufacturing defects."
+    }
+  ],
+  "warranty": {
+    "duration": "2 years",
+    "terms": "Covers manufacturing defects and performance issues under normal use. Contact support for claims."
+  },
+  "compatibility": [
+    "Two-Wheeler Battery Slots"
+  ],
+  "features": [
+    "Fast charging",
+    "Overcharge protection",
+    "Leak-proof design",
+    "LED charge status"
+  ],
+  "relatedProducts": [],
+  "deliveryInfo": {
+    "estimatedDelivery": "3-5 business days",
+    "shippingCost": "Free on orders over ₹50"
+  },
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Microtek 154Ah Bike Battery",
+    "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/sample_battery.jpg",
+    "description": "Reliable and efficient battery with long life and fast recharge.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Microtek"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 9998.67,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.batteryboss.in/product/microtek-154ah-bike-battery"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.6,
+      "reviewCount": 102
+    }
+  },
+  "createdAt": {
+    "$date": "2025-06-18T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b41"
+  },
+  "id": "p0049",
+  "name": "Microtek 129Ah Truck Battery",
+  "description": "Reliable and efficient Truck Batterie battery with long life and quick recharge support.",
+  "category": "Truck Batteries",
+  "brand": "Microtek",
+  "price": 6631.77,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4,
+  "stock": 11,
+  "isBestSeller": false,
+  "tags": [
+    "battery",
+    "durable",
+    "reliable"
+  ],
+  "slug": "microtek-129ah-truck-battery",
+  "metaTitle": "Buy Microtek 129Ah Truck Battery Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop Microtek - Microtek 129Ah Truck Battery with fast delivery, best warranty, and affordable pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/microtek-129ah-truck-battery",
+  "specifications": [
+    {
+      "label": "Capacity",
+      "value": "108Ah"
+    },
+    {
+      "label": "Voltage",
+      "value": "12V"
+    },
+    {
+      "label": "Weight",
+      "value": "51kg"
+    },
+    {
+      "label": "Dimensions",
+      "value": "51 x 20 x 30 cm"
+    },
+    {
+      "label": "Charging Time",
+      "value": "6 hours"
+    },
+    {
+      "label": "Connector Type",
+      "value": "Standard Terminal"
+    }
+  ],
+  "reviews": [
+    {
+      "rating": 4.2,
+      "comment": "Against all fund door water general.",
+      "author": "Matthew Stewart",
+      "date": "2025-05-10T00:00:00Z"
+    },
+    {
+      "rating": 3.9,
+      "comment": "Goal particular almost best.",
+      "author": "Keith Warren MD",
+      "date": "2025-05-04T00:00:00Z"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is this battery suitable for all types of vehicles?",
+      "answer": "Please check your vehicle compatibility. Most common models are supported."
+    },
+    {
+      "question": "What is the warranty period?",
+      "answer": "This battery comes with a 2-year warranty covering manufacturing defects."
+    }
+  ],
+  "warranty": {
+    "duration": "2 years",
+    "terms": "Covers manufacturing defects and performance issues under normal use. Contact support for claims."
+  },
+  "compatibility": [
+    "Golf Carts",
+    "UPS Systems"
+  ],
+  "features": [
+    "Fast charging",
+    "Overcharge protection",
+    "Leak-proof design",
+    "LED charge status"
+  ],
+  "relatedProducts": [],
+  "deliveryInfo": {
+    "estimatedDelivery": "3-5 business days",
+    "shippingCost": "Free on orders over ₹50"
+  },
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Microtek 129Ah Truck Battery",
+    "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/sample_battery.jpg",
+    "description": "Reliable and efficient battery with long life and fast recharge.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Microtek"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 5989.05,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.batteryboss.in/product/microtek-129ah-truck-battery"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.3,
+      "reviewCount": 238
+    }
+  },
+  "createdAt": {
+    "$date": "2025-05-16T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68638e98e357945e44446b42"
+  },
+  "id": "p0050",
+  "name": "SF Sonic 150Ah Car Battery",
+  "description": "Reliable and efficient Car Batterie battery with long life and quick recharge support.",
+  "category": "Car Batteries",
+  "brand": "SF Sonic",
+  "price": 14852.47,
+  "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
+  "rating": 4.2,
+  "stock": 44,
+  "isBestSeller": true,
+  "tags": [
+    "battery",
+    "durable",
+    "reliable"
+  ],
+  "slug": "sf-sonic-150ah-car-battery",
+  "metaTitle": "Buy SF Sonic 150Ah Car Battery Online at Best Price | BatteryBoss",
+  "metaDescription": "Shop SF Sonic - SF Sonic 150Ah Car Battery with fast delivery, best warranty, and affordable pricing. Order now from BatteryBoss.",
+  "canonicalUrl": "https://www.batteryboss.in/product/sf-sonic-150ah-car-battery",
+  "specifications": [
+    {
+      "label": "Capacity",
+      "value": "186Ah"
+    },
+    {
+      "label": "Voltage",
+      "value": "12V"
+    },
+    {
+      "label": "Weight",
+      "value": "36kg"
+    },
+    {
+      "label": "Dimensions",
+      "value": "43 x 20 x 30 cm"
+    },
+    {
+      "label": "Charging Time",
+      "value": "7 hours"
+    },
+    {
+      "label": "Connector Type",
+      "value": "Round Terminal"
+    }
+  ],
+  "reviews": [
+    {
+      "rating": 4.2,
+      "comment": "Central forget yard.",
+      "author": "Jasmine Watson",
+      "date": "2025-05-16T00:00:00Z"
+    },
+    {
+      "rating": 3.5,
+      "comment": "Environment social democratic price deep.",
+      "author": "Anthony Novak",
+      "date": "2025-05-10T00:00:00Z"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is this battery suitable for all types of vehicles?",
+      "answer": "Please check your vehicle compatibility. Most common models are supported."
+    },
+    {
+      "question": "What is the warranty period?",
+      "answer": "This battery comes with a 2-year warranty covering manufacturing defects."
+    }
+  ],
+  "warranty": {
+    "duration": "2 years",
+    "terms": "Covers manufacturing defects and performance issues under normal use. Contact support for claims."
+  },
+  "compatibility": [
+    "Microtek Inverters",
+    "Luminous Inverters"
+  ],
+  "features": [
+    "Fast charging",
+    "Overcharge protection",
+    "Leak-proof design",
+    "LED charge status"
+  ],
+  "relatedProducts": [],
+  "deliveryInfo": {
+    "estimatedDelivery": "3-5 business days",
+    "shippingCost": "Free on orders over ₹50"
+  },
+  "schema": {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "SF Sonic 150Ah Car Battery",
+    "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/sample_battery.jpg",
+    "description": "Reliable and efficient battery with long life and fast recharge.",
+    "brand": {
+      "@type": "Brand",
+      "name": "SF Sonic"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": 11509.99,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.batteryboss.in/product/sf-sonic-150ah-car-battery"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.4,
+      "reviewCount": 210
+    }
+  },
+  "createdAt": {
+    "$date": "2025-05-24T00:00:00.000Z"
+  }
+}]

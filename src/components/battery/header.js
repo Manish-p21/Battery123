@@ -65,6 +65,32 @@ const Header = () => {
   const handleSearch = (e) => {
     if (e.key === 'Enter' && searchQuery) {
       e.preventDefault();
+      
+      // Check if searchQuery matches a brand
+      const matchedBrand = brandData.find(
+        (brand) => brand.name.toLowerCase() === searchQuery.toLowerCase()
+      );
+      if (matchedBrand) {
+        window.location.href = `/Product?brand=${encodeURIComponent(matchedBrand.name)}`;
+        setSearchQuery('');
+        setSuggestions([]);
+        setIsSearchExpanded(false);
+        return;
+      }
+
+      // Check if searchQuery matches a category
+      const matchedCategory = batteryData.find(
+        (battery) => battery.name.toLowerCase() === searchQuery.toLowerCase()
+      );
+      if (matchedCategory) {
+        window.location.href = `/Product?category=${encodeURIComponent(matchedCategory.name)}`;
+        setSearchQuery('');
+        setSuggestions([]);
+        setIsSearchExpanded(false);
+        return;
+      }
+
+      // Fallback to general search
       window.location.href = `/search?query=${encodeURIComponent(searchQuery)}`;
       setSearchQuery('');
       setSuggestions([]);
