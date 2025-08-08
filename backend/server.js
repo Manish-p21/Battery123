@@ -145,7 +145,7 @@ const batteryController = {
   // Search batteries with query and filters
   searchBatteries: async (req, res) => {
     try {
-      const { q, category, brand, minPrice, maxPrice, capacity, sortBy, page = 1, limit = 10 } = req.query;
+      const { q, category, brand, minPrice, maxPrice, capacity, sortBy, page = 1, limit = 12 } = req.query;
 
       // Load battery data
       let batteries = await loadBatteryData();
