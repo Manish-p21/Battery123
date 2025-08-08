@@ -10570,7 +10570,7 @@
     "canonicalUrl": "https://www.batteryboss.in/product/hbl-148ah-line-interactive-ups",
     "schema": {
       "@context": "https://schema.org/",
-      "@type": "Product",
+      "@type": "Products",
       "name": "HBL 148Ah Line-Interactive UPS",
       "image": "https://drive.google.com/uc?id=img0001",
       "description": "High performance and long-lasting durability.",
