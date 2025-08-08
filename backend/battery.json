@@ -1,56 +1,5 @@
 [
-  {
-    "_id": {
-      "$oid": "68638e98e357945e44446b201"
-    },
-    "id": "p0001",
-    "name": "Eastman 130Ah Solar Batteries",
-    "description": "High performance and long-lasting durability.",
-    "category": "Solar Batteries",
-    "brand": "Eastman",
-    "price": 8022.99,
-    "image": "https://res.cloudinary.com/dn17q5qma/image/upload/v1751394427/79_79_Exide_Mileage_MLDIN44LH_qgmbmx.jpg",
-    "rating": 4.4,
-    "stock": 26,
-    "isBestSeller": true,
-    "tags": [
-      "solar-batteries",
-      "long-life"
-    ],
-    "slug": "eastman-130ah-solar-batteries",
-    "metaTitle": "Buy Eastman 130Ah Solar Batteries Online at Best Price | BatteryBoss",
-    "metaDescription": "Shop Eastman - Eastman 130Ah Solar Batteries with fast delivery, best warranty and great pricing. Order now from BatteryBoss.",
-    "canonicalUrl": "https://www.batteryboss.in/product/eastman-130ah-solar-batteries",
-    "schema": {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": "Eastman 130Ah Solar Batteries",
-      "image": "https://drive.google.com/uc?id=img0001",
-      "description": "High performance and long-lasting durability.",
-      "brand": {
-        "@type": "Brand",
-        "name": "Eastman"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": 8022.99,
-        "priceCurrency": "INR",
-        "availability": "https://schema.org/InStock"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": 4.4,
-        "reviewCount": 77
-      }
-    },
-    "discountPercentage": 0,
-    "warrantyPeriod": "2 Years",
-    "shippingInfo": "Free delivery within 5-7 business days",
-    "returnPolicy": "10-day replacement policy",
-    "weight": "2.5 kg",
-    "dimensions": "25 x 15 x 10 cm",
-    "lastUpdated": "2025-08-08"
-  },
+  
   {
     "_id": {
       "$oid": "68638e98e357945e44446b202"
