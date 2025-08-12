@@ -78,7 +78,7 @@ const ProductDescriptionPage = () => {
       try {
         const res = await axios.get(`https://battery-api-6an6.onrender.com/api/products/recommended/${slug}`);
         if (res.data.success) {
-          setRecommendedProducts(res.data.data.slice(0, 4)); // Limit to 4 recommendations
+          setRecommendedProducts(res.data.data.slice(0, 4));
         }
       } catch (err) {
         console.error('Failed to fetch recommendations:', err);
@@ -120,6 +120,25 @@ const ProductDescriptionPage = () => {
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
   };
+
+  // Flatten technicalSpecifications for display
+  const flattenSpecifications = (specs) => {
+    if (!specs) return [];
+    const result = [];
+    const addSpec = (key, value) => {
+      if (typeof value === 'object' && value !== null) {
+        Object.entries(value).forEach(([subKey, subValue]) => {
+          result.push({ label: `${key} ${subKey}`, value: subValue });
+        });
+      } else {
+        result.push({ label: key, value });
+      }
+    };
+    Object.entries(specs).forEach(([key, value]) => addSpec(key, value));
+    return result;
+  };
+
+  const specifications = flattenSpecifications(product.technicalSpecifications);
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-b from-gray-50 to-gray-100 font-poppins pt-16 pb-20">
@@ -173,10 +192,10 @@ const ProductDescriptionPage = () => {
               <div className="mt-6 bg-white rounded-b-2xl shadow-xl p-8 animate-fadeIn">
                 {activeTab === 'specifications' && (
                   <div className="border border-gray-100 rounded-2xl p-6">
-                    {(product.specifications?.length || 0) > 0 ? (
+                    {specifications.length > 0 ? (
                       <table className="w-full text-left">
                         <tbody>
-                          {product.specifications.map((spec, index) => (
+                          {specifications.map((spec, index) => (
                             <tr key={index} className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
                               <td className="text-gray-600 py-4 px-6 font-semibold">{spec.label}</td>
                               <td className="text-gray-800 py-4 px-6">{spec.value}</td>
@@ -244,10 +263,9 @@ const ProductDescriptionPage = () => {
 
             <div className="mb-10">
               <h2 className="text-3xl font-bold text-gray-800 mb-5">Product Description</h2>
-              <p className="text-gray-600 text-lg leading-relaxed">{product.description || 'No description'}</p>
+              <p className="text-gray-600 text-lg leading-relaxed">{product.shortDescription || 'No description'}</p>
             </div>
 
-            {/* Recommendations Section */}
             {recommendedProducts.length > 0 && (
               <div className="mb-10">
                 <h2 className="text-3xl font-bold text-gray-800 mb-6">Customers Also Bought</h2>
@@ -270,10 +288,32 @@ const ProductDescriptionPage = () => {
               <p className="text-2xl font-semibold text-gray-800 mb-2">
                 ₹{product.price ? (product.price * quantity).toFixed(2) : 'N/A'}
               </p>
-              <div className="mb-5 text-xs text-gray-600">
-                <span className="bg-green-100 text-green-800 font-semibold px-3 py-1.5 rounded-full shadow-sm">
-                  Free Shipping on orders over ₹50
-                </span>
+              <div className="mb-5 text-sm text-gray-600 space-y-2">
+                {product.warrantyPeriod && (
+                  <div>
+                    <span className="font-semibold">Warranty:</span> {product.warrantyPeriod}
+                  </div>
+                )}
+                {product.shippingInfo && (
+                  <div>
+                    <span className="font-semibold">Shipping:</span> {product.shippingInfo}
+                  </div>
+                )}
+                {product.returnPolicy && (
+                  <div>
+                    <span className="font-semibold">Return Policy:</span> {product.returnPolicy}
+                  </div>
+                )}
+                {product.weight && (
+                  <div>
+                    <span className="font-semibold">Weight:</span> {product.weight}
+                  </div>
+                )}
+                {product.dimensions && (
+                  <div>
+                    <span className="font-semibold">Dimensions:</span> {product.dimensions}
+                  </div>
+                )}
               </div>
               <div className="flex items-center mb-5">
                 <button

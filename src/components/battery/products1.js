@@ -4,36 +4,6 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import axios from 'axios';
 import Header from './header.js';
 
-// Mock product data (fallback if API fails)
-const mockProducts = [
-  {
-    _id: '1',
-    name: 'Amaron Car Battery',
-    price: 3500,
-    rating: 4.5,
-    description: 'High-performance car battery with long lifespan.',
-    image: '/amaron-car-battery.jpg',
-    isBestSeller: true,
-    brand: 'Amaron',
-    category: 'Car Battery',
-    capacity: '50Ah - 100Ah',
-    slug: 'amaron-car-battery',
-  },
-  {
-    _id: '2',
-    name: 'Exide Inverter Battery',
-    price: 4500,
-    rating: 4.0,
-    description: 'Reliable inverter battery for uninterrupted power.',
-    image: '/exide-inverter-battery.jpg',
-    isBestSeller: false,
-    brand: 'Exide',
-    category: 'Inverter Battery',
-    capacity: '100Ah - 150Ah',
-    slug: 'exide-inverter-battery',
-  },
-];
-
 const StarRating = ({ rating }) => {
   const stars = Array.from({ length: 5 }, (_, index) => (
     <svg
@@ -46,6 +16,25 @@ const StarRating = ({ rating }) => {
     </svg>
   ));
   return <div className="flex">{stars}</div>;
+};
+
+const SkeletonProduct = () => {
+  const gridImageHeight = 'h-80';
+  return (
+    <div className="relative bg-white p-6 border border-gray-200 rounded-2xl shadow-lg animate-pulse">
+      <div className={`relative ${gridImageHeight} mb-4 overflow-hidden rounded-lg bg-gray-200`}></div>
+      <div className="h-6 bg-gray-200 rounded w-3/4 mb-2"></div>
+      <div className="h-4 bg-gray-200 rounded w-full mb-3"></div>
+      <div className="flex items-center mb-3">
+        <div className="h-5 bg-gray-200 rounded w-24"></div>
+      </div>
+      <div className="h-6 bg-gray-200 rounded w-1/4 mb-4"></div>
+      <div className="flex gap-3">
+        <div className="flex-1 h-10 bg-gray-200 rounded-lg"></div>
+        <div className="flex-1 h-10 bg-gray-200 rounded-lg"></div>
+      </div>
+    </div>
+  );
 };
 
 const Products1 = () => {
@@ -68,7 +57,7 @@ const Products1 = () => {
   const [categories, setCategories] = useState(['All Types']);
   const [capacities, setCapacities] = useState(['All Capacities']);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
-  const [appliedFilters, setAppliedFilters] = useState({});
+  const [loading, setLoading] = useState(true);
 
   // Parse URL query parameters
   useEffect(() => {
@@ -101,9 +90,9 @@ const Products1 = () => {
           axios.get('https://battery-api-6an6.onrender.com/api/categories'),
           axios.get('https://battery-api-6an6.onrender.com/api/capacities'),
         ]);
-        if (brandsRes.data.success) setBrands(brandsRes.data.data);
-        if (categoriesRes.data.success) setCategories(categoriesRes.data.data);
-        if (capacitiesRes.data.success) setCapacities(capacitiesRes.data.data);
+        if (brandsRes.data.success) setBrands(['All Brands', ...brandsRes.data.data]);
+        if (categoriesRes.data.success) setCategories(['All Types', ...categoriesRes.data.data]);
+        if (capacitiesRes.data.success) setCapacities(['All Capacities', ...capacitiesRes.data.data]);
       } catch (error) {
         console.error('Error fetching filter options:', error);
         setError(error.message);
@@ -114,6 +103,7 @@ const Products1 = () => {
 
   // Fetch products with filters
   const fetchProducts = async (filters = {}) => {
+    setLoading(true);
     try {
       const params = {};
       if (filters.priceRange) {
@@ -127,14 +117,15 @@ const Products1 = () => {
       const res = await axios.get('https://battery-api-6an6.onrender.com/api/batteries', { params });
       if (res.data.success) {
         setFilteredProducts(res.data.data || []);
-        setAppliedFilters(res.data.appliedFilters || {});
       } else {
         throw new Error(res.data.message || 'Failed to fetch products');
       }
     } catch (error) {
       console.error('Error fetching products:', error);
       setError(error.message);
-      setFilteredProducts(mockProducts);
+      setFilteredProducts([]);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -248,9 +239,12 @@ const Products1 = () => {
                           min="2000"
                           max="10000"
                           value={priceRange[0]}
-                          onChange={(e) =>
-                            setPriceRange([Number(e.target.value), priceRange[1]])
-                          }
+                          onChange={(e) => {
+                            const newMin = Number(e.target.value);
+                            if (newMin <= priceRange[1]) {
+                              setPriceRange([newMin, priceRange[1]]);
+                            }
+                          }}
                           className="w-full accent-green-600"
                           aria-label="Minimum price"
                         />
@@ -259,16 +253,19 @@ const Products1 = () => {
                           min="2000"
                           max="10000"
                           value={priceRange[1]}
-                          onChange={(e) =>
-                            setPriceRange([priceRange[0], Number(e.target.value)])
-                          }
+                          onChange={(e) => {
+                            const newMax = Number(e.target.value);
+                            if (newMax >= priceRange[0]) {
+                              setPriceRange([priceRange[0], newMax]);
+                            }
+                          }}
                           className="w-full accent-green-600"
                           aria-label="Maximum price"
                         />
                       </div>
                       <div className="flex justify-between text-sm text-gray-600">
                         <span>₹2,000</span>
-                        <span>₹5,000</span>
+                        <span>₹10,000</span>
                       </div>
                     </div>
                   </div>
@@ -346,7 +343,11 @@ const Products1 = () => {
                   Featured Batteries & Chargers
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {filteredProducts.length === 0 ? (
+                  {loading ? (
+                    Array.from({ length: 6 }).map((_, index) => (
+                      <SkeletonProduct key={index} />
+                    ))
+                  ) : filteredProducts.length === 0 ? (
                     <p className="text-gray-600 text-center col-span-full">No products found</p>
                   ) : (
                     filteredProducts.slice(0, 500).map((product, index) => (
