@@ -49,7 +49,7 @@ const Products1 = () => {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [error, setError] = useState(null);
-  const [priceRange, setPriceRange] = useState([2000, 10000]);
+  const [priceRange, setPriceRange] = useState([1000, 250000]);
   const [brand, setBrand] = useState('All Brands');
   const [category, setCategory] = useState('All Types');
   const [capacity, setCapacity] = useState('All Capacities');
@@ -62,8 +62,8 @@ const Products1 = () => {
   // Parse URL query parameters
   useEffect(() => {
     const query = new URLSearchParams(location.search);
-    const minPrice = query.get('minPrice') ? Number(query.get('minPrice')) : 2000;
-    const maxPrice = query.get('maxPrice') ? Number(query.get('maxPrice')) : 10000;
+    const minPrice = query.get('minPrice') ? Number(query.get('minPrice')) : 1000;
+    const maxPrice = query.get('maxPrice') ? Number(query.get('maxPrice')) : 250000;
     const queryBrand = query.get('brand') || 'All Brands';
     const queryCategory = query.get('category') || 'All Types';
     const queryCapacity = query.get('capacity') || 'All Capacities';
@@ -90,9 +90,9 @@ const Products1 = () => {
           axios.get('https://battery-api-6an6.onrender.com/api/categories'),
           axios.get('https://battery-api-6an6.onrender.com/api/capacities'),
         ]);
-        if (brandsRes.data.success) setBrands(['All Brands', ...brandsRes.data.data]);
-        if (categoriesRes.data.success) setCategories(['All Types', ...categoriesRes.data.data]);
-        if (capacitiesRes.data.success) setCapacities(['All Capacities', ...capacitiesRes.data.data]);
+        if (brandsRes.data.success) setBrands(brandsRes.data.data);
+        if (categoriesRes.data.success) setCategories(categoriesRes.data.data);
+        if (capacitiesRes.data.success) setCapacities(capacitiesRes.data.data.filter(cap => cap));
       } catch (error) {
         console.error('Error fetching filter options:', error);
         setError(error.message);
@@ -106,17 +106,17 @@ const Products1 = () => {
     setLoading(true);
     try {
       const params = {};
-      if (filters.priceRange) {
-        params.minPrice = filters.priceRange[0];
-        params.maxPrice = filters.priceRange[1];
-      }
       if (filters.brand && filters.brand !== 'All Brands') params.brand = filters.brand;
       if (filters.category && filters.category !== 'All Types') params.category = filters.category;
       if (filters.capacity && filters.capacity !== 'All Capacities') params.capacity = filters.capacity;
 
       const res = await axios.get('https://battery-api-6an6.onrender.com/api/batteries', { params });
       if (res.data.success) {
-        setFilteredProducts(res.data.data || []);
+        const data = res.data.data || [];
+        const priceFiltered = data.filter(product => 
+          product.price >= filters.priceRange[0] && product.price <= filters.priceRange[1]
+        );
+        setFilteredProducts(priceFiltered);
       } else {
         throw new Error(res.data.message || 'Failed to fetch products');
       }
@@ -141,8 +141,8 @@ const Products1 = () => {
 
     // Update URL with current filters
     const params = new URLSearchParams();
-    if (priceRange[0] !== 2000) params.set('minPrice', priceRange[0]);
-    if (priceRange[1] !== 10000) params.set('maxPrice', priceRange[1]);
+    if (priceRange[0] !== 1000) params.set('minPrice', priceRange[0]);
+    if (priceRange[1] !== 250000) params.set('maxPrice', priceRange[1]);
     if (brand !== 'All Brands') params.set('brand', brand);
     if (category !== 'All Types') params.set('category', category);
     if (capacity !== 'All Capacities') params.set('capacity', capacity);
@@ -162,7 +162,7 @@ const Products1 = () => {
 
   // Reset filters to default
   const handleResetFilters = () => {
-    setPriceRange([2000, 10000]);
+    setPriceRange([1000, 250000]);
     setBrand('All Brands');
     setCategory('All Types');
     setCapacity('All Capacities');
@@ -212,7 +212,7 @@ const Products1 = () => {
           
         </div>
       </div>
-      <main className="container mx-auto px-4 sm:px-6 lg:px-0 py-8">
+      <main className="container mx-auto px-40 sm:px-6 lg:px-8 py-8">
         <div className="grid grid-cols-7 gap-0">
           <div className="col-span-7 md:col-span-2">
             <section className="py-8 text-black">
@@ -236,8 +236,8 @@ const Products1 = () => {
                       <div className="flex items-center gap-4">
                         <input
                           type="range"
-                          min="2000"
-                          max="10000"
+                          min="1000"
+                          max="250000"
                           value={priceRange[0]}
                           onChange={(e) => {
                             const newMin = Number(e.target.value);
@@ -250,8 +250,8 @@ const Products1 = () => {
                         />
                         <input
                           type="range"
-                          min="2000"
-                          max="10000"
+                          min="1000"
+                          max="250000"
                           value={priceRange[1]}
                           onChange={(e) => {
                             const newMax = Number(e.target.value);
@@ -264,8 +264,8 @@ const Products1 = () => {
                         />
                       </div>
                       <div className="flex justify-between text-sm text-gray-600">
-                        <span>₹2,000</span>
-                        <span>₹10,000</span>
+                        <span>₹1,000</span>
+                        <span>₹250,000</span>
                       </div>
                     </div>
                   </div>
@@ -455,7 +455,7 @@ const Products1 = () => {
 };
 
 StarRating.propTypes = {
-  rating: PropTypes.number,
+  rating: PropTypes.number,     
 };
 
 Products1.propTypes = {};

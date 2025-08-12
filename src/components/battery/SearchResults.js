@@ -23,6 +23,24 @@ const StarRating = ({ rating }) => {
   return <div className="flex">{stars}</div>;
 };
 
+const SkeletonProduct = () => {
+  return (
+    <div className="bg-gray-100 p-4 rounded-lg shadow-md border border-gray-200 animate-pulse">
+      <div className="w-full h-48 bg-gray-200 rounded"></div>
+      <div className="p-3">
+        <div className="h-6 bg-gray-200 rounded w-3/4 mb-2"></div>
+        <div className="h-4 bg-gray-200 rounded w-full mb-2"></div>
+        <div className="h-4 bg-gray-200 rounded w-5/6 mb-2"></div>
+        <div className="h-5 bg-gray-200 rounded w-1/4 mb-2"></div>
+        <div className="flex items-center mb-2">
+          <div className="h-5 bg-gray-200 rounded w-24"></div>
+        </div>
+        <div className="h-10 bg-gray-200 rounded w-full"></div>
+      </div>
+    </div>
+  );
+};
+
 const SearchResults = () => {
   const [products, setProducts] = useState([]);
   const [allProducts, setAllProducts] = useState([]);
@@ -110,13 +128,16 @@ const SearchResults = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-white pt-20">
-        <div className="text-center">
-          <svg className="animate-spin h-10 w-10 text-green-600 mx-auto" fill="none" viewBox="0 0 24 24">
-            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-          </svg>
-          <p className="mt-2 text-gray-800">Loading search results...</p>
+      <div className="min-h-screen w-full bg-white py-10 px-20 pt-28">
+        <div className="container mx-auto px-4">
+          <h1 className="text-4xl font-extrabold text-green-600 mb-6 text-left">
+            Search Results
+          </h1>
+          <div className="pt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {Array.from({ length: 8 }).map((_, index) => (
+              <SkeletonProduct key={index} />
+            ))}
+          </div>
         </div>
       </div>
     );
@@ -165,47 +186,46 @@ const SearchResults = () => {
 
         {/* Filters and Search */}
         <div className="mb-6 flex flex-wrap justify-between items-center">
-        {/* Left Filters */}
-        <div className="flex gap-4 flex-wrap">
+          {/* Left Filters */}
+          <div className="flex gap-4 flex-wrap">
             <select
-            className="px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
-            onChange={(e) => handleFilter('category', e.target.value)}
-            value={category || ''}
+              className="px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
+              onChange={(e) => handleFilter('category', e.target.value)}
+              value={category || ''}
             >
-            <option value="">All Categories</option>
-            <option value="Chargers">Chargers</option>
-            <option value="Batteries">Batteries</option>
-            <option value="Inverters">Inverters</option>
-            <option value="UPS">UPS</option>
-            <option value="Solar">Solar</option>
+              <option value="">All Categories</option>
+              <option value="Chargers">Chargers</option>
+              <option value="Batteries">Batteries</option>
+              <option value="Inverters">Inverters</option>
+              <option value="UPS">UPS</option>
+              <option value="Solar">Solar</option>
             </select>
 
             <select
-            className="px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
-            onChange={(e) => handleFilter('brand', e.target.value)}
-            value={brand || ''}
+              className="px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
+              onChange={(e) => handleFilter('brand', e.target.value)}
+              value={brand || ''}
             >
-            <option value="">All Brands</option>
-            <option value="Microtek">Microtek</option>
-            <option value="Amaron">Amaron</option>
-            <option value="Exide">Exide</option>
-            <option value="Livguard">Livguard</option>
-            <option value="Luminous">Luminous</option>
-            <option value="Tata">Tata</option>
+              <option value="">All Brands</option>
+              <option value="Microtek">Microtek</option>
+              <option value="Amaron">Amaron</option>
+              <option value="Exide">Exide</option>
+              <option value="Livguard">Livguard</option>
+              <option value="Luminous">Luminous</option>
+              <option value="Tata">Tata</option>
             </select>
-        </div>
+          </div>
 
-        {/* Search Box aligned to right */}
-        <input
+          {/* Search Box aligned to right */}
+          <input
             type="text"
             placeholder="Search products..."
             className="w-96 px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
             value={searchTerm}
             onChange={handleInputChange}
             onKeyPress={(e) => e.key === 'Enter' && e.preventDefault()}
-        />
+          />
         </div>
-
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
