@@ -86,7 +86,7 @@ function WaterRippleEffect({ children }) {
         {ripples.map((ripple, index) => (
           <div
             key={index}
-            className="absolute rounded-full bg-green-600/20 pointer-events-none"
+            className="absolute rounded-full bg-red-600/20 pointer-events-none"
             style={{
               left: ripple.x - ripple.size / 2,
               top: ripple.y - ripple.size / 2,
@@ -123,7 +123,7 @@ const About = () => {
         <WaterRippleEffect>
           <h2 className="text-3xl font-semibold text-gray-800 mb-8">Our Mission</h2>
           <p className="text-gray-600 leading-relaxed">
-            At Ampere Innovations, our mission is to power the future with innovative, eco-friendly energy solutions. Founded in 2018, we set out to address the growing demand for reliable, high-performance batteries and chargers in a world increasingly dependent on portable technology. We believe that power should be seamless, sustainable, and accessible to all. Our products, from the UltraMax Li-Ion Battery to the HyperCharge 100W Charger, are engineered to deliver unmatched performance while minimizing environmental impact. We strive to create a world where devices never run out of power, and where energy solutions contribute to a greener planet.
+            At Ampere Innovations, our mission is to power the future with innovative, eco-friendly energy solutions. Founded in 2018, we set out to address the growing demand for reliable, high-performance batteries and chargers in a world increasingly dependent on portable technology. We believe that power should be seamless, sustainable, and accessible to all. Our products, from the UltraMax Li-Ion Battery to the HyperCharge 100W Charger, are engineered to deliver unmatched performance while minimizing environmental impact. We strive to create a world where devices never run out of power, and where energy solutions contribute to a reder planet.
           </p>
         </WaterRippleEffect>
       </SectionContainer>
@@ -134,7 +134,7 @@ const About = () => {
           <h2 className="text-3xl font-semibold text-gray-800 mb-8">Our Journey</h2>
           <div className="space-y-8">
             <div className="flex items-start">
-              <div className="flex-shrink-0 w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center text-lg font-bold">2018</div>
+              <div className="flex-shrink-0 w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center text-lg font-bold">2018</div>
               <div className="ml-6">
                 <h3 className="text-xl font-semibold text-gray-800">Founding of Ampere</h3>
                 <p className="text-gray-600">
@@ -143,7 +143,7 @@ const About = () => {
               </div>
             </div>
             <div className="flex items-start">
-              <div className="flex-shrink-0 w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center text-lg font-bold">2020</div>
+              <div className="flex-shrink-0 w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center text-lg font-bold">2020</div>
               <div className="ml-6">
                 <h3 className="text-xl font-semibold text-gray-800">Breakthrough in Li-Ion Technology</h3>
                 <p className="text-gray-600">
@@ -152,7 +152,7 @@ const About = () => {
               </div>
             </div>
             <div className="flex items-start">
-              <div className="flex-shrink-0 w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center text-lg font-bold">2023</div>
+              <div className="flex-shrink-0 w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center text-lg font-bold">2023</div>
               <div className="ml-6">
                 <h3 className="text-xl font-semibold text-gray-800">Global Expansion</h3>
                 <p className="text-gray-600">
@@ -161,7 +161,7 @@ const About = () => {
               </div>
             </div>
             <div className="flex items-start">
-              <div className="flex-shrink-0 w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center text-lg font-bold">2025</div>
+              <div className="flex-shrink-0 w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center text-lg font-bold">2025</div>
               <div className="ml-6">
                 <h3 className="text-xl font-semibold text-gray-800">Sustainability Milestone</h3>
                 <p className="text-gray-600">
@@ -336,7 +336,7 @@ const About = () => {
         </p>
         <Link
           to="/products"
-          className="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 text-lg font-semibold"
+          className="bg-red-600 text-white px-8 py-3 rounded-full hover:bg-red-700 text-lg font-semibold"
         >
           Explore Products
         </Link>

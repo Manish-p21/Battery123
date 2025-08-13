@@ -130,7 +130,7 @@ const SearchResults = () => {
     return (
       <div className="min-h-screen w-full bg-white py-10 px-20 pt-28">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-extrabold text-green-600 mb-6 text-left">
+          <h1 className="text-4xl font-extrabold text-red-600 mb-6 text-left">
             Search Results
           </h1>
           <div className="pt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -150,7 +150,7 @@ const SearchResults = () => {
           <h2 className="text-2xl font-bold text-red-600 mb-4">Error</h2>
           <p className="text-gray-800">{error}</p>
           <button
-            className="mt-4 bg-green-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-green-700 transition duration-300"
+            className="mt-4 bg-red-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-red-700 transition duration-300"
             onClick={() => navigate('/search')}
           >
             Retry
@@ -172,7 +172,7 @@ const SearchResults = () => {
             ))}
           </div>
           <button
-            className="mt-4 bg-green-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-green-700 transition duration-300"
+            className="mt-4 bg-red-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-red-700 transition duration-300"
             onClick={() => navigate('/')}
           >
             Back to Home
@@ -185,7 +185,7 @@ const SearchResults = () => {
   return (
     <div className="min-h-screen bg-white py-10 px-20 pt-28">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-extrabold text-green-600 mb-6 text-left">
+        <h1 className="text-4xl font-extrabold text-red-600 mb-6 text-left">
           Search Results for "{searchTerm || category || brand || 'All Products'}"
         </h1>
 
@@ -203,7 +203,7 @@ const SearchResults = () => {
           {/* Left Filters */}
           <div className="flex gap-4 flex-wrap">
             <select
-              className="px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
+              className="px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600"
               onChange={(e) => handleFilter('category', e.target.value)}
               value={category || ''}
             >
@@ -216,7 +216,7 @@ const SearchResults = () => {
             </select>
 
             <select
-              className="px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
+              className="px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600"
               onChange={(e) => handleFilter('brand', e.target.value)}
               value={brand || ''}
             >
@@ -234,7 +234,7 @@ const SearchResults = () => {
           <input
             type="text"
             placeholder="Search products..."
-            className="w-96 px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
+            className="w-96 px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600"
             value={searchTerm}
             onChange={handleInputChange}No Results Found
             onKeyPress={(e) => e.key === 'Enter' && e.preventDefault()}
@@ -248,7 +248,7 @@ const SearchResults = () => {
               <p className="text-sm text-gray-500 mb-2 px-2">{product.category || 'No Category'}</p>
               <div className="relative bg-white border border-gray-200 rounded-xl shadow-md hover:shadow-xl hover:scale-100 transition-all duration-500 transform p-2">
                 {product.isBestSeller && (
-                  <span className="absolute top-4 left-4 z-20 bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  <span className="absolute top-4 left-4 z-20 bg-red-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
                     Best Seller
                   </span>
                 )}
@@ -278,7 +278,7 @@ const SearchResults = () => {
                   <span className="ml-2 text-xs text-gray-500">({product.rating || 0})</span>
                 </div>
                 <button
-                  className="w-full bg-gradient-to-r from-green-600 to-green-700 text-white font-semibold py-2 rounded-lg hover:from-green-700 hover:to-green-800 transition duration-300 shadow-md"
+                  className="w-full bg-gradient-to-r from-red-600 to-red-700 text-white font-semibold py-2 rounded-lg hover:from-red-700 hover:to-red-800 transition duration-300 shadow-md"
                   onClick={() => navigate(`/product/${product.slug || ''}`)}
                 >
                   View Full Details

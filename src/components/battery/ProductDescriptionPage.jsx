@@ -103,7 +103,7 @@ const ProductDescriptionPage = () => {
         <div className="text-center p-8 bg-white rounded-2xl shadow-xl">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">Product Not Found</h2>
           <button
-            className="bg-green-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-green-700 transition duration-300 transform hover:scale-105"
+            className="bg-red-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-red-700 transition duration-300 transform hover:scale-105"
             onClick={() => navigate('/')}
           >
             Back to Shop
@@ -166,7 +166,7 @@ const ProductDescriptionPage = () => {
                 loading="lazy"
               />
               {product.isBestSeller && (
-                <span className="absolute top-4 left-4 bg-green-600 text-white text-sm font-semibold px-3 py-1.5 rounded-full shadow-md">
+                <span className="absolute top-4 left-4 bg-red-600 text-white text-sm font-semibold px-3 py-1.5 rounded-full shadow-md">
                   Best Seller
                 </span>
               )}
@@ -180,7 +180,7 @@ const ProductDescriptionPage = () => {
                     key={tab}
                     className={`py-3 px-6 text-base font-semibold transition-all duration-300 ${
                       activeTab === tab
-                        ? 'text-green-600 border-b-2 border-green-600'
+                        ? 'text-red-600 border-b-2 border-red-600'
                         : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
                     }`}
                     onClick={() => setActiveTab(tab)}
@@ -330,11 +330,11 @@ const ProductDescriptionPage = () => {
                   +
                 </button>
               </div>
-              <button className="w-full bg-green-600 text-white font-semibold py-4 rounded-lg hover:bg-green-700 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 mb-4">
+              <button className="w-full bg-red-600 text-white font-semibold py-4 rounded-lg hover:bg-red-700 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 mb-4">
                 Add to Cart
               </button>
               <button
-                className="w-full border-2 border-green-600 text-green-600 font-semibold py-4 rounded-lg hover:bg-green-600/10 transition-colors duration-300 transform hover:scale-105"
+                className="w-full border-2 border-red-600 text-red-600 font-semibold py-4 rounded-lg hover:bg-red-600/10 transition-colors duration-300 transform hover:scale-105"
                 onClick={() => navigate('/')}
               >
                 Continue Shopping

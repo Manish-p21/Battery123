@@ -20,7 +20,7 @@ const LoadingPage = () => {
           .bouncing-ball {
             width: 50px;
             height: 50px;
-            background-color: #22c55e; /* Tailwind green-500 */
+            background-color: #22c55e; /* Tailwind red-500 */
             border-radius: 9999px;
             animation: verticalBounce 1s infinite ease-in-out;
             box-shadow: 0 0 12px rgba(34, 197, 94, 0.6);
@@ -43,7 +43,7 @@ const LoadingPage = () => {
 
         {/* Loading Text */}
         <div className="text-center mt-6">
-          <h2 className="text-green-600 text-lg font-semibold animate-pulse">
+          <h2 className="text-red-600 text-lg font-semibold animate-pulse">
             Serving your experience...
           </h2>
           <p className="text-sm text-gray-500">Hang tight, loading in progress</p>

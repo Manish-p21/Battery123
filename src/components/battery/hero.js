@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const slides = [
   { id: 1, title: "Power All Devices", description: "Explore batteries for every need.", buttonText: "Learn More", image: "/images/455.jpg" },
   { id: 2, title: "Long-Lasting Energy", description: "Reliable power for all applications.", buttonText: "Discover Now", image: "/images/12.png" },
-  { id: 3, title: "Eco-Friendly Solutions", description: "Sustainable batteries for a greener future.", buttonText: "Go Green", image: "/images/1.jpg" },
+  { id: 3, title: "Eco-Friendly Solutions", description: "Sustainable batteries for a reder future.", buttonText: "Go Green", image: "/images/1.jpg" },
   { id: 4, title: "High Performance", description: "Unmatched power for heavy-duty use.", buttonText: "Get Started", image: "/images/2.jpg" },
   { id: 5, title: "Rechargeable Innovation", description: "Cutting-edge rechargeable options.", buttonText: "See Details", image: "/images/3.jpg" },
 ];
@@ -44,7 +44,7 @@ const Carousel = () => {
               <div className="absolute top-1/2 left-10 transform -translate-y-1/2 text-left text-white p-6 max-w-md z-20">
                 <h2 className="text-4xl font-bold mb-4">{slide.title}</h2>
                 <p className="text-lg mb-6">{slide.description}</p>
-                <button className="bg-white text-green-600 font-bold py-2 px-4 rounded hover:bg-gray-200 transition duration-300">
+                <button className="bg-white text-red-600 font-bold py-2 px-4 rounded hover:bg-gray-200 transition duration-300">
                   {slide.buttonText}
                 </button>
               </div>
@@ -67,13 +67,13 @@ const Carousel = () => {
       </div>
 
       {/* Shop Info Section (1/4 Width with Transparent Blur Background) */}
-      <div className="absolute right-0 w-1/4 h-full border-l border-green-100/50 bg-black/50 backdrop-blur-sm text-white p-10 flex flex-col justify-center z-30">
+      <div className="absolute right-0 w-1/4 h-full border-l border-red-100/50 bg-black/50 backdrop-blur-sm text-white p-10 flex flex-col justify-center z-30">
         <h2 className="text-3xl font-extrabold mb-8 mt-8 tracking-tight">Visit Our Shop</h2>
-        <div className="mb-8 border-l-4 border-green-600 pl-4">
+        <div className="mb-8 border-l-4 border-red-600 pl-4">
           <h3 className="text-xl font-semibold mb-2">Address</h3>
           <p className="text-md text-gray-200">H.NO.2093, MIDC Rd, near Mukund Company, Ram Nagar, Dighe, Navi Mumbai, Maharashtra 400708</p>
         </div>
-        <div className="mb-8 border-l-4 border-green-600 pl-4">
+        <div className="mb-8 border-l-4 border-red-600 pl-4">
           <h3 className="text-xl font-semibold mb-2">Contact</h3>
           <p className="text-md text-gray-200">Mobile: +91 9869677994</p>
         </div>
@@ -95,7 +95,7 @@ const Carousel = () => {
           href="https://www.google.com/maps/place/National+Battery+Service/@19.1806029,72.997892,783m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3be7bf2930dce389:0xc4a11f0701efe1b3!8m2!3d19.1806029!4d72.997892!16s%2Fg%2F11gfndvlv9?entry=ttu&g_ep=EgoyMDI1MDgwMy4wIKXMDSoASAFQAw%3D%3D"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-green-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 hover:scale-105 transition duration-300 ease-in-out text-center"
+          className="bg-red-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-red-700 hover:scale-105 transition duration-300 ease-in-out text-center"
         >
           Get Directions
         </a>

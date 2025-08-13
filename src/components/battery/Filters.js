@@ -87,7 +87,7 @@ const Filters = ({ onApplyFilters, onResetFilters, isMobile }) => {
           )}
         </div>
         <div className="bg-white p-6 rounded-lg border grid gap-6 grid-cols-1">
-          <div className="bg-green-50 p-4 rounded-lg">
+          <div className="bg-red-50 p-4 rounded-lg">
             <label className="block text-gray-700 font-semibold mb-2">Price Range</label>
             <div className="flex flex-col gap-4">
               <div className="flex items-center gap-4">
@@ -97,7 +97,7 @@ const Filters = ({ onApplyFilters, onResetFilters, isMobile }) => {
                   max="10000"
                   value={priceRange[0]}
                   onChange={(e) => setPriceRange([Number(e.target.value), priceRange[1]])}
-                  className="w-full accent-green-600"
+                  className="w-full accent-red-600"
                   aria-label="Minimum price"
                 />
                 <input
@@ -106,7 +106,7 @@ const Filters = ({ onApplyFilters, onResetFilters, isMobile }) => {
                   max="10000"
                   value={priceRange[1]}
                   onChange={(e) => setPriceRange([priceRange[0], Number(e.target.value)])}
-                  className="w-full accent-green-600"
+                  className="w-full accent-red-600"
                   aria-label="Maximum price"
                 />
               </div>
@@ -116,7 +116,7 @@ const Filters = ({ onApplyFilters, onResetFilters, isMobile }) => {
               </div>
             </div>
           </div>
-          <div className="bg-green-50 p-4 rounded-lg">
+          <div className="bg-red-50 p-4 rounded-lg">
             <label className="block text-gray-700 font-semibold mb-2">Brands</label>
             <div className="grid gap-2">
               {brands.map((brand) => (
@@ -125,14 +125,14 @@ const Filters = ({ onApplyFilters, onResetFilters, isMobile }) => {
                     type="checkbox"
                     checked={selectedBrands.includes(brand)}
                     onChange={() => handleCheckboxChange(brand, selectedBrands, setSelectedBrands)}
-                    className="accent-green-600"
+                    className="accent-red-600"
                   />
                   {brand}
                 </label>
               ))}
             </div>
           </div>
-          <div className="bg-green-50 p-4 rounded-lg">
+          <div className="bg-red-50 p-4 rounded-lg">
             <label className="block text-gray-700 font-semibold mb-2">Categories</label>
             <div className="grid gap-2">
               {categories.map((category) => (
@@ -141,14 +141,14 @@ const Filters = ({ onApplyFilters, onResetFilters, isMobile }) => {
                     type="checkbox"
                     checked={selectedCategories.includes(category)}
                     onChange={() => handleCheckboxChange(category, selectedCategories, setSelectedCategories)}
-                    className="accent-green-600"
+                    className="accent-red-600"
                   />
                   {category}
                 </label>
               ))}
             </div>
           </div>
-          <div className="bg-green-50 p-4 rounded-lg">
+          <div className="bg-red-50 p-4 rounded-lg">
             <label className="block text-gray-700 font-semibold mb-2">Capacities</label>
             <div className="grid gap-2">
               {capacities.map((capacity) => (
@@ -157,17 +157,17 @@ const Filters = ({ onApplyFilters, onResetFilters, isMobile }) => {
                     type="checkbox"
                     checked={selectedCapacities.includes(capacity)}
                     onChange={() => handleCheckboxChange(capacity, selectedCapacities, setSelectedCapacities)}
-                    className="accent-green-600"
+                    className="accent-red-600"
                   />
                   {capacity}
                 </label>
               ))}
             </div>
           </div>
-          <div className="bg-green-50 p-4 rounded-lg flex flex-col sm:flex-row gap-4">
+          <div className="bg-red-50 p-4 rounded-lg flex flex-col sm:flex-row gap-4">
             <button
               onClick={handleApply}
-              className="w-full sm:flex-1 bg-green-600 text-white font-semibold py-2 rounded-lg hover:bg-green-700 transition duration-300"
+              className="w-full sm:flex-1 bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition duration-300"
               aria-label="Apply filters"
             >
               Apply Filters

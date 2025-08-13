@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductSection = () => {
   return (
-    <div className="relative z-20 py-20 bg-gradient-to-br from-green-100 to-white">
+    <div className="relative z-20 py-20 bg-gradient-to-br from-red-100 to-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 text-center mb-16 animate-slide-up">
           Explore Our Products

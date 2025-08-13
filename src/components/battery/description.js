@@ -96,14 +96,14 @@ const Description = () => {
         {/* Action Buttons */}
         <div className="flex gap-4">
           <button
-            className="flex-1 bg-green-600 text-white font-semibold py-3 rounded-lg hover:bg-green-700 transition duration-300 shadow-md"
+            className="flex-1 bg-red-600 text-white font-semibold py-3 rounded-lg hover:bg-red-700 transition duration-300 shadow-md"
             aria-label={`Add ${product.name} to cart`}
           >
             Add to Cart
           </button>
           <Link
             to={`/product/battery/${product.id}`}
-            className="flex-1 text-center border-2 border-green-600 text-green-600 font-semibold py-3 rounded-lg hover:bg-green-600/10 transition duration-300"
+            className="flex-1 text-center border-2 border-red-600 text-red-600 font-semibold py-3 rounded-lg hover:bg-red-600/10 transition duration-300"
             aria-label={`View full details for ${product.name}`}
           >
             View Full Details

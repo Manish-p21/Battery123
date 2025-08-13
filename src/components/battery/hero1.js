@@ -113,7 +113,7 @@ const Hero1 = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Error Loading Products</h2>
           <p className="text-gray-600 mb-6">{error}</p>
           <button
-            className="bg-green-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-green-700 transition duration-300 shadow-md"
+            className="bg-red-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-red-700 transition duration-300 shadow-md"
             onClick={() => window.location.reload()}
           >
             Retry
@@ -136,8 +136,8 @@ const Hero1 = () => {
               onClick={() => navigate('')}
               className={`px-4 py-2 border border-gray-200 font-medium rounded-xl transition-all duration-300 shadow-md ${
                 !selectedCategory
-                  ? 'bg-green-600 text-white hover:bg-green-500'
-                  : 'bg-white text-gray-800 hover:bg-green-100 hover:text-gray-900'
+                  ? 'bg-red-600 text-white hover:bg-red-500'
+                  : 'bg-white text-gray-800 hover:bg-red-100 hover:text-gray-900'
               }`}
             >
               All Types
@@ -150,8 +150,8 @@ const Hero1 = () => {
                   onClick={() => navigate(`?category=${cat.toLowerCase().replace(/\s+/g, '-')}`)}
                   className={`px-4 py-2 border border-gray-200 font-medium rounded-xl transition-all duration-300 shadow-md ${
                     formattedCategory === cat
-                      ? 'bg-green-600 text-white hover:bg-green-500'
-                      : 'bg-white text-gray-800 hover:bg-green-100 hover:text-gray-900'
+                      ? 'bg-red-600 text-white hover:bg-red-500'
+                      : 'bg-white text-gray-800 hover:bg-red-100 hover:text-gray-900'
                   }`}
                 >
                   {cat}
@@ -178,7 +178,7 @@ const Hero1 = () => {
                   <p className="text-sm text-gray-500 mb-2 px-2">{product.category || 'No Category'}</p>
                   <div className="relative bg-white border border-gray-200 rounded-xl shadow-md hover:shadow-xl hover:scale-100 transition-all duration-500 transform p-2">
                     {product.isBestSeller && (
-                      <span className="absolute top-4 left-4 z-20 bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                      <span className="absolute top-4 left-4 z-20 bg-red-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
                         Best Seller
                       </span>
                     )}
@@ -210,7 +210,7 @@ const Hero1 = () => {
                       <span className="ml-2 text-xs text-gray-500">({product.rating || 0})</span>
                     </div>
                     <button
-                      className="w-full bg-gradient-to-r from-green-600 to-green-700 text-white font-semibold py-2 rounded-lg hover:from-green-700 hover:to-green-800 transition duration-300 shadow-md"
+                      className="w-full bg-gradient-to-r from-red-600 to-red-700 text-white font-semibold py-2 rounded-lg hover:from-red-700 hover:to-red-800 transition duration-300 shadow-md"
                       onClick={() => navigate(`/product/${product.slug || ''}`)}
                     >
                       View Full Details

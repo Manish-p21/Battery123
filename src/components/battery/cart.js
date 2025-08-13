@@ -188,7 +188,7 @@ const Cart = () => {
           <p className="text-gray-600 mb-6">Explore our range of high-performance batteries and chargers!</p>
           <Link
             to="/"
-            className="bg-green-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-green-700 transition duration-300"
+            className="bg-red-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-red-700 transition duration-300"
             aria-label="Shop now"
           >
             Shop Now
@@ -264,7 +264,7 @@ const Cart = () => {
           </p>
           <div className="w-full bg-gray-200 rounded-full h-2">
             <div
-              className="bg-green-600 h-2 rounded-full transition-all duration-500"
+              className="bg-red-600 h-2 rounded-full transition-all duration-500"
               style={{ width: `${progressPercentage}%` }}
             />
           </div>
@@ -297,7 +297,7 @@ const Cart = () => {
                       <div className="flex-1">
                         <Link
                           to={`/product/${product.id}`}
-                          className="text-lg font-semibold text-gray-800 hover:text-green-600"
+                          className="text-lg font-semibold text-gray-800 hover:text-red-600"
                         >
                           {product.name}
                         </Link>
@@ -334,14 +334,14 @@ const Cart = () => {
                             type="checkbox"
                             checked={item.giftWrap}
                             onChange={() => handleGiftWrapToggle(productId)}
-                            className="mr-2 accent-green-600"
+                            className="mr-2 accent-red-600"
                             aria-label={`Toggle gift wrap for ${product.name}`}
                           />
                           <span className="text-gray-600 text-sm">Gift Wrap ($3/item)</span>
                         </label>
                         {/* Notes */}
                         <textarea
-                          className="w-full mt-2 p-2 border border-gray-200 rounded-lg text-sm text-gray-600 resize-none focus:ring-green-600 focus:border-green-600"
+                          className="w-full mt-2 p-2 border border-gray-200 rounded-lg text-sm text-gray-600 resize-none focus:ring-red-600 focus:border-red-600"
                           rows="2"
                           placeholder="Add notes (e.g., gift message)"
                           value={item.notes}
@@ -381,7 +381,7 @@ const Cart = () => {
                 </button>
                 <Link
                   to="/"
-                  className="text-green-600 font-semibold hover:text-green-800"
+                  className="text-red-600 font-semibold hover:text-red-800"
                   aria-label="Continue shopping"
                 >
                   Continue Shopping
@@ -433,7 +433,7 @@ const Cart = () => {
                     </div>
                   )}
                   {discount > 0 && (
-                    <div className="flex justify-between mb-2 text-green-600">
+                    <div className="flex justify-between mb-2 text-red-600">
                       <span>Discount ({cartState.promo})</span>
                       <span>-${discount.toFixed(2)}</span>
                     </div>
@@ -451,14 +451,14 @@ const Cart = () => {
                       <input
                         id="promo"
                         type="text"
-                        className={`w-full p-2 border rounded-l-lg text-sm focus:ring-green-600 focus:border-green-600 ${promoError ? 'border-red-600' : 'border-gray-200'}`}
+                        className={`w-full p-2 border rounded-l-lg text-sm focus:ring-red-600 focus:border-red-600 ${promoError ? 'border-red-600' : 'border-gray-200'}`}
                         value={promoInput}
                         onChange={(e) => setPromoInput(e.target.value)}
                         placeholder="Enter code (e.g., SAVE10)"
                         aria-label="Promo code"
                       />
                       <button
-                        className="bg-green-600 text-white px-4 rounded-r-lg hover:bg-green-700 transition duration-200"
+                        className="bg-red-600 text-white px-4 rounded-r-lg hover:bg-red-700 transition duration-200"
                         onClick={applyPromo}
                         aria-label="Apply promo code"
                         title="Apply promo"
@@ -471,7 +471,7 @@ const Cart = () => {
                     )}
                   </div>
                   <button
-                    className="w-full bg-green-600 text-white font-semibold py-3 rounded-lg hover:bg-green-700 transition duration-300 mt-6"
+                    className="w-full bg-red-600 text-white font-semibold py-3 rounded-lg hover:bg-red-700 transition duration-300 mt-6"
                     onClick={handleCheckout}
                     aria-label="Proceed to checkout"
                   >

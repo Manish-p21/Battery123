@@ -9,7 +9,7 @@ const benefits = [
     title: 'Eco-Friendly Power',
     description: 'Our batteries are designed with sustainability in mind, using recyclable materials to reduce environmental impact.',
     icon: (
-      <svg className="w-12 h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-12 h-12 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
       </svg>
     ),
@@ -19,7 +19,7 @@ const benefits = [
     title: 'Fast & Free Shipping',
     description: 'Enjoy quick delivery on all orders with free shipping across the country.',
     icon: (
-      <svg className="w-12 h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-12 h-12 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
       </svg>
     ),
@@ -29,7 +29,7 @@ const benefits = [
     title: 'Certified Quality',
     description: 'All products undergo rigorous testing to ensure top performance and safety.',
     icon: (
-      <svg className="w-12 h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-12 h-12 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
@@ -39,7 +39,7 @@ const benefits = [
     title: '24/7 Support',
     description: 'Our team is here to assist you anytime with expert advice and solutions.',
     icon: (
-      <svg className="w-12 h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-12 h-12 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
       </svg>
     ),
@@ -77,7 +77,7 @@ const Hero2 = () => {
         <div className="text-center">
           <Link
             to="/shop"
-            className="inline-block bg-green-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-green-700 transition duration-300 shadow-md"
+            className="inline-block bg-red-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-red-700 transition duration-300 shadow-md"
             aria-label="Shop now for batteries and chargers"
           >
             Shop Now

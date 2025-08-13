@@ -8,7 +8,7 @@ const StarRating = ({ rating }) => {
   const stars = Array.from({ length: 5 }, (_, index) => (
     <svg
       key={index}
-      className={`w-5 h-5 ${index < Math.round(rating) ? 'text-yellow-400' : 'text-gray-300'}`}
+      className={`w-3 h-3 ${index < Math.round(rating) ? 'text-yellow-400' : 'text-gray-300'}`}
       fill="currentColor"
       viewBox="0 0 20 20"
     >
@@ -18,29 +18,35 @@ const StarRating = ({ rating }) => {
   return <div className="flex">{stars}</div>;
 };
 
+// Utility function to convert Google Drive view link to direct image URL
+const getGoogleDriveImageUrl = (url) => {
+  if (!url || typeof url !== 'string') return '/placeholder.jpg';
+  const match = url.match(/\/file\/d\/(.+?)\/view/);
+  if (match && match[1]) {
+    return `https://drive.google.com/uc?export=view&id=${match[1]}`;
+  }
+  return url.includes('drive.google.com') ? '/placeholder.jpg' : url;
+};
+
 const SkeletonProduct = () => {
   const gridImageHeight = 'h-80';
   return (
-    <div className="relative bg-white p-6 border border-gray-200 rounded-2xl shadow-lg animate-pulse">
-      <div className={`relative ${gridImageHeight} mb-4 overflow-hidden rounded-lg bg-gray-200`}></div>
-      <div className="h-6 bg-gray-200 rounded w-3/4 mb-2"></div>
-      <div className="h-4 bg-gray-200 rounded w-full mb-3"></div>
-      <div className="flex items-center mb-3">
-        <div className="h-5 bg-gray-200 rounded w-24"></div>
-      </div>
-      <div className="h-6 bg-gray-200 rounded w-1/4 mb-4"></div>
-      <div className="flex gap-3">
-        <div className="flex-1 h-10 bg-gray-200 rounded-lg"></div>
-        <div className="flex-1 h-10 bg-gray-200 rounded-lg"></div>
-      </div>
+    <div className="relative bg-white p-2 border border-gray-200 rounded-xl shadow-md animate-pulse">
+      <div className={`relative ${gridImageHeight} mb-2 overflow-hidden rounded-lg bg-gray-200`}></div>
+      <div className="h-6 bg-gray-200 rounded w-3/4 mb-2 mx-2"></div>
+      <div className="border-t border-gray-200 mx-2 my-2"></div>
+      <div className="h-6 bg-gray-200 rounded w-1/4 mb-2 mx-2"></div>
+      <div className="h-4 bg-gray-200 rounded w-full mb-4 mx-2"></div>
+      <div className="h-5 bg-gray-200 rounded w-24 mb-4 mx-2"></div>
+      <div className="h-10 bg-gray-200 rounded-lg mx-2"></div>
     </div>
   );
 };
 
 const Products1 = () => {
-  const gridImageWidth = 'w-80';
+  const gridImageWidth = 'w-80 mx-auto';
   const gridImageHeight = 'h-80';
-  const quickViewImageWidth = 'mx-28 w-80';
+  const quickViewImageWidth = 'mx-auto w-80';
   const quickViewImageHeight = 'h-80';
 
   const navigate = useNavigate();
@@ -147,7 +153,7 @@ const Products1 = () => {
     if (category !== 'All Types') params.set('category', category);
     if (capacity !== 'All Capacities') params.set('capacity', capacity);
     navigate(`/Product?${params.toString()}`, { replace: true });
-  }, [priceRange, brand, category, capacity, navigate]);
+  }, [priceRange, brand, category, capacity, navigate]);;
 
   // Handle filter application
   const handleApplyFilters = () => {
@@ -185,12 +191,12 @@ const Products1 = () => {
 
   if (error) {
     return (
-      <div className="min-h-screen flex items-center w-full bg-white justify-center font-poppins">
-        <div className="text-center">
+      <div className="min-h-screen flex items-center w-full bg-gray-50 justify-center font-poppins">
+        <div className="text-center p-6 bg-white rounded-xl shadow-lg">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Error Loading Products</h2>
-          <p className="text-gray-600 mb-4">{error}</p>
+          <p className="text-gray-600 mb-6">{error}</p>
           <button
-            className="bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700"
+            className="bg-red-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-red-700 transition duration-300 shadow-md"
             onClick={() => window.location.reload()}
           >
             Retry
@@ -201,7 +207,7 @@ const Products1 = () => {
   }
 
   return (
-    <div className="font-poppins bg-white w-full min-h-screen">
+    <div className="font-poppins bg-gray-50 w-full min-h-screen">
       <Header />
       <div className="bg-gray-50 py-6 border-b">
         <div className="container w-full mx-auto px-4 sm:px-6 lg:px-8">
@@ -209,12 +215,11 @@ const Products1 = () => {
           <p className="text-gray-600 mt-2">
             Discover our curated selection of products tailored to your needs
           </p>
-          
         </div>
       </div>
-      <main className="container mx-auto px-40 sm:px-6 lg:px-8 py-8">
-        <div className="grid grid-cols-7 gap-0">
-          <div className="col-span-7 md:col-span-2">
+      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-7 gap-8">
+          <div className="col-span-1 md:col-span-2">
             <section className="py-8 text-black">
               <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center mb-6">
@@ -230,7 +235,7 @@ const Products1 = () => {
                   )}
                 </div>
                 <div className="bg-white p-6 rounded-lg border grid gap-6 grid-cols-1 auto-rows-auto">
-                  <div className="bg-green-50 p-4 rounded-lg">
+                  <div className="bg-red-50 p-4 rounded-lg">
                     <label className="block text-gray-700 font-semibold mb-2">Price Range</label>
                     <div className="flex flex-col gap-4">
                       <div className="flex items-center gap-4">
@@ -245,7 +250,7 @@ const Products1 = () => {
                               setPriceRange([newMin, priceRange[1]]);
                             }
                           }}
-                          className="w-full accent-green-600"
+                          className="w-full accent-red-600"
                           aria-label="Minimum price"
                         />
                         <input
@@ -259,7 +264,7 @@ const Products1 = () => {
                               setPriceRange([priceRange[0], newMax]);
                             }
                           }}
-                          className="w-full accent-green-600"
+                          className="w-full accent-red-600"
                           aria-label="Maximum price"
                         />
                       </div>
@@ -269,12 +274,12 @@ const Products1 = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="bg-green-50 p-4 rounded-lg">
+                  <div className="bg-red-50 p-4 rounded-lg">
                     <label className="block text-gray-700 font-semibold mb-2">Brand</label>
                     <select
                       value={brand}
                       onChange={(e) => setBrand(e.target.value)}
-                      className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                      className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent"
                       aria-label="Battery brand"
                     >
                       {brands.map((brand) => (
@@ -284,12 +289,12 @@ const Products1 = () => {
                       ))}
                     </select>
                   </div>
-                  <div className="bg-green-50 p-4 rounded-lg">
+                  <div className="bg-red-50 p-4 rounded-lg">
                     <label className="block text-gray-700 font-semibold mb-2">Category</label>
                     <select
                       value={category}
                       onChange={(e) => setCategory(e.target.value)}
-                      className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                      className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent"
                       aria-label="Battery category"
                     >
                       {categories.map((cat) => (
@@ -299,12 +304,12 @@ const Products1 = () => {
                       ))}
                     </select>
                   </div>
-                  <div className="bg-green-50 p-4 rounded-lg">
+                  <div className="bg-red-50 p-4 rounded-lg">
                     <label className="block text-gray-700 font-semibold mb-2">Capacity</label>
                     <select
                       value={capacity}
                       onChange={(e) => setCapacity(e.target.value)}
-                      className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                      className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent"
                       aria-label="Battery capacity"
                     >
                       {capacities.map((cap) => (
@@ -314,10 +319,10 @@ const Products1 = () => {
                       ))}
                     </select>
                   </div>
-                  <div className="bg-green-50 p-4 rounded-lg flex flex-col sm:flex-row gap-4">
+                  <div className="bg-red-50 p-4 rounded-lg flex flex-col sm:flex-row gap-4">
                     <button
                       onClick={handleApplyFilters}
-                      className="w-full sm:flex-1 bg-green-600 text-white font-semibold py-2 rounded-lg hover:bg-green-700 transition duration-300"
+                      className="w-full sm:flex-1 bg-red-600 text-white font-semibold py-2 rounded-lg hover:bg-red-700 transition duration-300 shadow-md"
                       aria-label="Apply filters"
                     >
                       Apply Filters
@@ -325,7 +330,7 @@ const Products1 = () => {
                     {!isMobile && (
                       <button
                         onClick={handleResetFilters}
-                        className="w-full sm:flex-1 bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition duration-300"
+                        className="w-full sm:flex-1 bg-gray-200 text-gray-800 font-semibold py-2 rounded-lg hover:bg-gray-300 transition duration-300 shadow-md"
                         aria-label="Reset all filters"
                       >
                         Reset Filters
@@ -336,61 +341,62 @@ const Products1 = () => {
               </div>
             </section>
           </div>
-          <div className="col-span-7 md:col-span-5">
-            <section className="bg-white font-poppins">
+          <div className="col-span-1 md:col-span-5">
+            <section className="bg-gray-50 font-poppins">
               <div className="w-full mx-auto px-4 sm:px-6 lg:px-0">
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">
+                <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-12 text-left tracking-tight">
                   Featured Batteries & Chargers
                 </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-20">
                   {loading ? (
                     Array.from({ length: 6 }).map((_, index) => (
                       <SkeletonProduct key={index} />
                     ))
                   ) : filteredProducts.length === 0 ? (
-                    <p className="text-gray-600 text-center col-span-full">No products found</p>
+                    <p className="text-gray-600 text-lg text-center col-span-full">No products found</p>
                   ) : (
                     filteredProducts.slice(0, 500).map((product, index) => (
                       <div
                         key={product._id || index}
-                        className="relative bg-white p-6 border border-gray-200 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 animate-fadeIn"
-                        style={{ animationDelay: `${index * 0.1}s` }}
+                        style={{ animation: `fadeIn 0.5s ease-in-out ${index * 0.1}s` }}
                         role="article"
                       >
-                        {product.isBestSeller && (
-                          <span className="absolute top-4 left-4 z-20 bg-green-600 text-white text-xs font-semibold px-2 py-1 rounded-full">
-                            Best Seller
-                          </span>
-                        )}
-                        <div className={`relative ${gridImageHeight} mb-4 overflow-hidden rounded-lg`}>
-                          <img
-                            src={product.image || '/placeholder.jpg'}
-                            alt={product.name || 'Product'}
-                            className={`${gridImageWidth} ${gridImageHeight} object-cover`}
-                            loading="lazy"
-                          />
-                        </div>
-                        <h3 className="text-xl font-semibold text-gray-800 mb-2">{product.name || 'Unnamed Product'}</h3>
-                        <p className="text-gray-600 text-sm mb-3 line-clamp-2">{product.description || 'No description'}</p>
-                        <div className="flex items-center mb-3">
-                          <StarRating rating={product.rating || 0} />
-                          <span className="ml-2 text-sm text-gray-500">({product.rating || 0})</span>
-                        </div>
-                        <p className="text-lg font-bold text-gray-800 mb-4">
-                          ₹{product.price ? product.price.toFixed(2) : 'N/A'}
-                        </p>
-                        <div className="flex gap-3">
+                        <p className="text-sm text-gray-500 mb-2 px-2">{product.category || 'No Category'}</p>
+                        <div className="relative bg-white border border-gray-200 rounded-xl shadow-md hover:shadow-xl hover:scale-100 transition-all duration-500 transform p-2">
+                          {product.isBestSeller && (
+                            <span className="absolute top-4 left-4 z-20 bg-red-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                              Best Seller
+                            </span>
+                          )}
+                          <div className={`relative ${gridImageHeight} mb-2 overflow-hidden rounded-lg bg-white`}>
+                            <img
+                              src={getGoogleDriveImageUrl(product.image) || '/placeholder.jpg'}
+                              alt={product.name || 'Product'}
+                              className={`${gridImageWidth} ${gridImageHeight} object-contain transition-transform duration-300 hover:scale-105`}
+                              loading="lazy"
+                            />
+                          </div>
+                          <h3 className="text-lg font-semibold text-gray-900 mb-1 px-2">
+                            {(product.name?.length > 30)
+                              ? product.name.slice(0, 30) + "..."
+                              : product.name || "Unnamed Product"}
+                          </h3>
+                          <div className="border-t border-gray-200 mx-2 my-2"></div>
+                          <p className="text-lg font-bold text-gray-900 mb-2 px-2">
+                            ₹{product.price ? product.price.toLocaleString("en-IN") : 'N/A'}
+                          </p>
+                          <p className="text-gray-600 text-xs mb-4 px-2 line-clamp-2">
+                            {product.shortDescription || product.description || 'No description'}
+                          </p>
+                          <div className="flex items-center mb-4 px-2">
+                            <StarRating rating={product.rating || 0} />
+                            <span className="ml-2 text-xs text-gray-500">({product.rating || 0})</span>
+                          </div>
                           <button
-                            className="flex-1 text-center bg-green-600 text-white font-semibold py-2 rounded-lg hover:bg-green-700 transition duration-300 shadow-md"
-                            onClick={() => setSelectedProduct(product)}
+                            className="w-full bg-gradient-to-r from-red-600 to-red-700 text-white font-semibold py-2 rounded-lg hover:from-red-700 hover:to-red-800 transition duration-300 shadow-md"
+                            onClick={() => navigate(`/product/${product.slug || ''}`)}
                           >
-                            Add to Cart
-                          </button>
-                          <button
-                            className="flex-1 text-center border-2 border-green-600 text-green-600 font-semibold py-2 rounded-lg hover:bg-green-600/10 transition duration-300"
-                            onClick={() => setSelectedProduct(product)}
-                          >
-                            Quick View
+                            View Full Details
                           </button>
                         </div>
                       </div>
@@ -416,11 +422,11 @@ const Products1 = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
-            <div className={`relative ${quickViewImageHeight} mb-6 overflow-hidden rounded-lg`}>
+            <div className={`relative ${quickViewImageHeight} mb-6 overflow-hidden rounded-lg bg-white`}>
               <img
-                src={selectedProduct.image || '/placeholder.jpg'}
+                src={getGoogleDriveImageUrl(selectedProduct.image) || '/placeholder.jpg'}
                 alt={selectedProduct.name || 'Product'}
-                className={`${quickViewImageWidth} ${quickViewImageHeight} object-cover`}
+                className={`${quickViewImageWidth} ${quickViewImageHeight} object-contain`}
               />
             </div>
             <h2 className="text-2xl font-bold text-gray-800 mb-2">{selectedProduct.name || 'Unnamed Product'}</h2>
@@ -428,20 +434,20 @@ const Products1 = () => {
               <StarRating rating={selectedProduct.rating || 0} />
               <span className="ml-2 text-sm text-gray-500">({selectedProduct.rating || 0})</span>
             </div>
-            <p className="text-xl font-semibold text-gray-800 mb-4">
-              ₹{selectedProduct.price ? selectedProduct.price.toFixed(2) : 'N/A'}
+            <p className="text-xl font-bold text-gray-800 mb-4">
+              ₹{selectedProduct.price ? selectedProduct.price.toLocaleString("en-IN") : 'N/A'}
             </p>
             <hr className="border-gray-200 mb-4" />
-            <p className="text-gray-600 mb-6">{selectedProduct.description || 'No description'}</p>
+            <p className="text-gray-600 mb-6">{selectedProduct.shortDescription || selectedProduct.description || 'No description'}</p>
             <hr className="border-gray-200 mb-6" />
             <div className="flex gap-4">
               <button
-                className="flex-1 bg-green-600 text-white font-semibold py-3 rounded-lg hover:bg-green-700 transition duration-300 shadow-md"
+                className="flex-1 bg-gradient-to-r from-red-600 to-red-700 text-white font-semibold py-3 rounded-lg hover:from-red-700 hover:to-red-800 transition duration-300 shadow-md"
               >
                 Add to Cart
               </button>
               <button
-                className="flex-1 text-center border-2 border-green-600 text-green-600 font-semibold py-2 rounded-lg hover:bg-green-600/10 transition duration-300"
+                className="flex-1 text-center bg-white border-2 border-red-600 text-red-600 font-semibold py-2 rounded-lg hover:bg-red-600/10 transition duration-300 shadow-md"
                 onClick={() => navigate(`/product/${selectedProduct.slug || ''}`)}
               >
                 View Full Details
@@ -455,7 +461,7 @@ const Products1 = () => {
 };
 
 StarRating.propTypes = {
-  rating: PropTypes.number,     
+  rating: PropTypes.number,
 };
 
 Products1.propTypes = {};
