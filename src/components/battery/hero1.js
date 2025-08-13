@@ -28,13 +28,10 @@ const getGoogleDriveImageUrl = (url) => {
 };
 
 const Hero1 = () => {
-  // Adjustable image dimensions for grid and quick view
+  // Adjustable image dimensions for grid
   const gridImageWidth = 'w-80 mx-auto';
   const gridImageHeight = 'h-80';
-  const quickViewImageWidth = 'w-96 mx-auto';
-  const quickViewImageHeight = 'h-96';
 
-  const [selectedProduct, setSelectedProduct] = useState(null);
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
   const [error, setError] = useState(null);
@@ -53,88 +50,6 @@ const Hero1 = () => {
         .join(' ')
         .trim()
     : '';
-
-  // Mock products for fallback, including UPS Batteries and E-Rickshaw Batteries
-  const mockProducts = [
-    {
-      _id: '1',
-      name: 'Amaron Car Battery',
-      price: 3500,
-      rating: 4.5,
-      description: 'High-performance car battery with long lifespan.',
-      image: '/amaron-car-battery.jpg',
-      isBestSeller: true,
-      brand: 'Amaron',
-      category: 'Batteries',
-      capacity: '50Ah - 100Ah',
-      slug: 'amaron-car-battery',
-    },
-    {
-      _id: '2',
-      name: 'Exide Inverter Battery',
-      price: 4500,
-      rating: 4.0,
-      description: 'Reliable inverter battery for uninterrupted power.',
-      image: '/exide-inverter-battery.jpg',
-      isBestSeller: false,
-      brand: 'Exide',
-      category: 'Inverters',
-      capacity: '100Ah - 150Ah',
-      slug: 'exide-inverter-battery',
-    },
-    {
-      _id: '3',
-      name: 'Luminous UPS Battery',
-      price: 6000,
-      rating: 4.2,
-      description: 'Efficient UPS battery for home and office use.',
-      image: '/luminous-ups-battery.jpg',
-      isBestSeller: false,
-      brand: 'Luminous',
-      category: 'UPS Batteries',
-      capacity: '100Ah - 150Ah',
-      slug: 'luminous-ups-battery',
-    },
-    {
-      _id: '4',
-      name: 'Microtek Charger',
-      price: 2500,
-      rating: 4.0,
-      description: 'Fast and reliable battery charger.',
-      image: '/microtek-charger.jpg',
-      isBestSeller: true,
-      brand: 'Microtek',
-      category: 'Chargers',
-      capacity: 'N/A',
-      slug: 'microtek-charger',
-    },
-    {
-      _id: '5',
-      name: 'Tata Solar Panel',
-      price: 8000,
-      rating: 4.3,
-      description: 'High-efficiency solar panel for renewable energy.',
-      image: '/tata-solar.jpg',
-      isBestSeller: false,
-      brand: 'Tata',
-      category: 'Solar Batteries',
-      capacity: 'N/A',
-      slug: 'tata-solar',
-    },
-    {
-      _id: '6',
-      name: 'Livguard E-Rickshaw Battery',
-      price: 7000,
-      rating: 4.1,
-      description: 'Durable battery for e-rickshaw applications.',
-      image: '/livguard-e-rickshaw.jpg',
-      isBestSeller: false,
-      brand: 'Livguard',
-      category: 'E-Rickshaw Batteries',
-      capacity: '120Ah - 150Ah',
-      slug: 'livguard-e-rickshaw-battery',
-    },
-  ];
 
   // Fetch categories from API
   useEffect(() => {
@@ -177,43 +92,19 @@ const Hero1 = () => {
               })
             : fetchedProducts;
           console.log('Filtered products:', filteredProducts); // Debugging
-          setProducts(filteredProducts.length > 0 ? filteredProducts : mockProducts.filter(product => {
-            const productCategory = product.category?.trim();
-            console.log(`Fallback: Comparing mock product category "${productCategory}" with selected "${formattedCategory}"`); // Debugging
-            return !formattedCategory || productCategory === formattedCategory;
-          }));
+          setProducts(filteredProducts);
         } else {
           throw new Error(res.data.message || 'Failed to fetch products');
         }
       } catch (error) {
         console.error('Error fetching products:', error.message);
         setError(error.message);
-        // Use mock products filtered by category as a fallback
-        setProducts(formattedCategory ? mockProducts.filter(product => {
-          const productCategory = product.category?.trim();
-          console.log(`Fallback: Comparing mock product category "${productCategory}" with selected "${formattedCategory}"`); // Debugging
-          return productCategory === formattedCategory;
-        }) : mockProducts);
       } finally {
         setLoading(false);
       }
     };
     fetchProducts();
   }, [formattedCategory]);
-
-  // Handle quick view modal
-  const handleClose = () => setSelectedProduct(null);
-  const handleOverlayClick = (e) => {
-    if (e.target === e.currentTarget) handleClose();
-  };
-
-  useEffect(() => {
-    const handleEscape = (e) => {
-      if (e.key === 'Escape' && selectedProduct) handleClose();
-    };
-    window.addEventListener('keydown', handleEscape);
-    return () => window.removeEventListener('keydown', handleEscape);
-  }, [selectedProduct]);
 
   if (error) {
     return (
@@ -279,48 +170,50 @@ const Hero1 = () => {
               No products found for {formattedCategory || 'All Types'}
             </p>
           ) : (
-            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-20">
               {products.slice(0, 30).map((product, index) => (
-                <div
-                  key={product._id || index}
-                  className="relative bg-white px-2 border border-gray-200 rounded-xl shadow-md hover:shadow-xl hover:scale-100 transition-all duration-500 transform"
-                  style={{ animation: `fadeIn 0.5s ease-in-out ${index * 0.1}s` }}
-                  role="article"
-                >
-                  {product.isBestSeller && (
-                    <span className="absolute top-4 left-4 z-20 bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
-                      Best Seller
-                    </span>
-                  )}
-                  <div className={`relative ${gridImageHeight} mb-0 overflow-hidden rounded-lg bg-white`}>
-                    <img
-                      src={getGoogleDriveImageUrl(product.image) || '/placeholder.jpg'}
-                      alt={product.name || 'Product'}
-                      className={`${gridImageWidth} ${gridImageHeight} object-contain transition-transform duration-300 hover:scale-105`}
-                      loading="lazy"
-                    />
-                  </div>
-                  <h3 className="text-lg px-2 font-semibold text-gray-900 mb-0">{product.name || 'Unnamed Product'}</h3>
-                  <p className="text-gray-600 px-2 text-xs mb-4 line-clamp-2">{product.description || 'No description'}</p>
-                  <p className="text-lg px-2 font-bold text-gray-900 mb-0">
-                    ₹{product.price ? product.price.toFixed(2) : 'N/A'}
-                  </p>
-                  <div className="flex px-2 items-center mb-4">
-                    <StarRating rating={product.rating || 0} />
-                    <span className="ml-2 text-xs text-gray-500">({product.rating || 0})</span>
-                  </div>
-                  <div className="flex pb-4 px-2 gap-4">
+                <div key={product._id || index} style={{ animation: `fadeIn 0.5s ease-in-out ${index * 0.1}s` }}>
+                  
+
+                  <p className="text-sm text-gray-500 mb-2 px-2">{product.category || 'No Category'}</p>
+                  <div className="relative bg-white border border-gray-200 rounded-xl shadow-md hover:shadow-xl hover:scale-100 transition-all duration-500 transform p-2">
+                    {product.isBestSeller && (
+                      <span className="absolute top-4 left-4 z-20 bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                        Best Seller
+                      </span>
+                    )}
+                    <div className={`relative ${gridImageHeight} mb-2 overflow-hidden rounded-lg bg-white`}>
+                      <img
+                        src={getGoogleDriveImageUrl(product.image) || '/placeholder.jpg'}
+                        alt={product.name || 'Product'}
+                        className={`${gridImageWidth} ${gridImageHeight} object-contain transition-transform duration-300 hover:scale-105`}
+                        loading="lazy"
+                      />
+                    </div>
+
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1 px-2">
+                      {(product.name?.length > 30) 
+                        ? product.name.slice(0, 30) + "..." 
+                        : product.name || "Unnamed Product"}
+                    </h3>
+                    <div className="border-t border-gray-200 mx-2 my-2"></div>
+                    <p className="text-lg font-bold text-gray-900 mb-2 px-2">
+                      ₹
+                      {product.price
+                        ? product.price.toLocaleString("en-IN")
+                        : "N/A"}
+                    </p>
+
+                    <p className="text-gray-600 text-xs mb-4 px-2 line-clamp-2">{product.shortDescription || 'No description'}</p>
+                    <div className="flex items-center mb-4 px-2">
+                      <StarRating rating={product.rating || 0} />
+                      <span className="ml-2 text-xs text-gray-500">({product.rating || 0})</span>
+                    </div>
                     <button
-                      className="flex-1 bg-gradient-to-r from-green-600 to-green-700 text-white font-semibold py-2 rounded-lg hover:from-green-700 hover:to-green-800 transition duration-300 shadow-md"
-                      onClick={() => setSelectedProduct(product)}
+                      className="w-full bg-gradient-to-r from-green-600 to-green-700 text-white font-semibold py-2 rounded-lg hover:from-green-700 hover:to-green-800 transition duration-300 shadow-md"
+                      onClick={() => navigate(`/product/${product.slug || ''}`)}
                     >
-                      Add to Cart
-                    </button>
-                    <button
-                      className="flex-1 border-2 border-green-600 text-green-600 font-semibold py-2 rounded-lg hover:bg-green-50 transition duration-300"
-                      onClick={() => setSelectedProduct(product)}
-                    >
-                      Quick View
+                      View Full Details
                     </button>
                   </div>
                 </div>
@@ -329,55 +222,6 @@ const Hero1 = () => {
           )}
         </div>
       </section>
-
-      {selectedProduct && (
-        <div
-          className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 transition-opacity duration-300"
-          onClick={handleOverlayClick}
-        >
-          <div className="bg-white rounded-xl max-w-2xl w-full mx-4 p-8 shadow-2xl transform transition-all duration-500 animate-slideInUp font-poppins relative">
-            <button
-              className="absolute top-4 right-4 text-gray-600 hover:text-gray-800 transition duration-200"
-              onClick={handleClose}
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-            <div className={`relative ${quickViewImageHeight} mb-8 overflow-hidden rounded-lg`}>
-              <img
-                src={getGoogleDriveImageUrl(selectedProduct.image) || '/placeholder.jpg'}
-                alt={selectedProduct.name || 'Product'}
-                className={`${quickViewImageWidth} ${quickViewImageHeight} object-cover transition-transform duration-300 hover:scale-105`}
-              />
-            </div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">{selectedProduct.name || 'Unnamed Product'}</h2>
-            <div className="flex items-center mb-4">
-              <StarRating rating={selectedProduct.rating || 0} />
-              <span className="ml-2 text-sm text-gray-500">({selectedProduct.rating || 0})</span>
-            </div>
-            <p className="text-xl font-semibold text-gray-900 mb-4">
-              ₹{selectedProduct.price ? selectedProduct.price.toFixed(2) : 'N/A'}
-            </p>
-            <hr className="border-gray-200 mb-6" />
-            <p className="text-gray-600 mb-6 leading-relaxed">{selectedProduct.description || 'No description'}</p>
-            <hr className="border-gray-200 mb-6" />
-            <div className="flex gap-4">
-              <button
-                className="flex-1 bg-gradient-to-r from-green-600 to-green-700 text-white font-semibold py-3 rounded-lg hover:from-green-700 hover:to-green-800 transition duration-300 shadow-md"
-              >
-                Add to Cart
-              </button>
-              <button
-                className="flex-1 border-2 border-green-600 text-green-600 font-semibold py-3 rounded-lg hover:bg-green-50 transition duration-300"
-                onClick={() => navigate(`/product/${selectedProduct.slug || ''}`)}
-              >
-                View Full Details
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

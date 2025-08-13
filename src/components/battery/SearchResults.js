@@ -97,7 +97,7 @@ const SearchResults = () => {
       filtered = filtered.filter(p =>
         p.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
         p.brand?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        p.description?.toLowerCase().includes(searchTerm.toLowerCase())
+        p.shortDescription?.toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
     setProducts(filtered);
@@ -162,10 +162,15 @@ const SearchResults = () => {
 
   if (products.length === 0) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-white pt-20">
-        <div className="text-center p-6 bg-gray-100 rounded-lg shadow-lg">
+      <div className="min-h-screen  flex items-center justify-center bg-white pt-20 w-full">
+        <div className="text-center p-6  w-full bg-gray-100 rounded-lg shadow-lg">
           <h2 className="text-2xl font-bold text-gray-600 mb-4">No Results Found</h2>
           <p className="text-gray-800">No products match "{searchTerm || category || brand || 'your search'}". Try different terms.</p>
+          <div className="pt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {Array.from({ length: 8 }).map((_, index) => (
+              <SkeletonProduct key={index} />
+            ))}
+          </div>
           <button
             className="mt-4 bg-green-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-green-700 transition duration-300"
             onClick={() => navigate('/')}
@@ -186,6 +191,15 @@ const SearchResults = () => {
 
         {/* Filters and Search */}
         <div className="mb-6 flex flex-wrap justify-between items-center">
+
+
+
+
+
+
+           
+
+             
           {/* Left Filters */}
           <div className="flex gap-4 flex-wrap">
             <select
@@ -222,38 +236,52 @@ const SearchResults = () => {
             placeholder="Search products..."
             className="w-96 px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
             value={searchTerm}
-            onChange={handleInputChange}
+            onChange={handleInputChange}No Results Found
             onKeyPress={(e) => e.key === 'Enter' && e.preventDefault()}
           />
         </div>
 
         {/* Products Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-20">
           {products.map((product) => (
-            <div
-              key={product._id.$oid || product.id}
-              className="bg-gray-100 p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-200"
-            >
-              <div className="w-full h-48 flex items-center justify-center bg-white">
-                <img
-                  src={getGoogleDriveImageUrl(product.image)}
-                  alt={product.name}
-                  className="max-h-full max-w-full object-contain"
-                />
-              </div>
-              <div className="p-3">
-                <h3 className="text-lg font-semibold text-gray-800 mt-2 line-clamp-2">{product.name}</h3>
-                <p className="text-gray-600 text-sm mb-2 line-clamp-3">{product.description}</p>
-                <p className="text-green-600 font-bold mb-2">₹{product.price?.toFixed(2) || 'N/A'}</p>
-                <div className="flex items-center mb-2">
+            <div key={product._id.$oid || product.id} style={{ animation: `fadeIn 0.5s ease-in-out` }}>
+              <p className="text-sm text-gray-500 mb-2 px-2">{product.category || 'No Category'}</p>
+              <div className="relative bg-white border border-gray-200 rounded-xl shadow-md hover:shadow-xl hover:scale-100 transition-all duration-500 transform p-2">
+                {product.isBestSeller && (
+                  <span className="absolute top-4 left-4 z-20 bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                    Best Seller
+                  </span>
+                )}
+                <div className="relative h-48 mb-2 overflow-hidden rounded-lg bg-white">
+                  <img
+                    src={getGoogleDriveImageUrl(product.image) || '/placeholder.jpg'}
+                    alt={product.name || 'Product'}
+                    className="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-1 px-2">
+                  {(product.name?.length > 30) 
+                    ? product.name.slice(0, 30) + "..." 
+                    : product.name || "Unnamed Product"}
+                </h3>
+                <div className="border-t border-gray-200 mx-2 my-2"></div>
+                <p className="text-lg font-bold text-gray-900 mb-2 px-2">
+                  ₹
+                  {product.price
+                    ? product.price.toLocaleString("en-IN")
+                    : "N/A"}
+                </p>
+                <p className="text-gray-600 text-xs mb-4 px-2 line-clamp-2">{product.shortDescription || 'No description'}</p>
+                <div className="flex items-center mb-4 px-2">
                   <StarRating rating={product.rating || 0} />
-                  <span className="ml-2 text-gray-600 text-sm">({product.rating || 0})</span>
+                  <span className="ml-2 text-xs text-gray-500">({product.rating || 0})</span>
                 </div>
                 <button
-                  className="w-full bg-green-600 text-white font-semibold py-2 rounded-lg hover:bg-green-700 transition duration-300"
-                  onClick={() => navigate(`/product/${product.slug}`)}
+                  className="w-full bg-gradient-to-r from-green-600 to-green-700 text-white font-semibold py-2 rounded-lg hover:from-green-700 hover:to-green-800 transition duration-300 shadow-md"
+                  onClick={() => navigate(`/product/${product.slug || ''}`)}
                 >
-                  View Details
+                  View Full Details
                 </button>
               </div>
             </div>
